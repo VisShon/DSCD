@@ -1,0 +1,22 @@
+{
+  "name": "rabbitmq",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Server.js",
+  "scripts": {
+    "start": "node client.js",
+    "client": "node client.js",
+    "server": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "amqplib": "^0.10.3",
+    "chalk": "4.1.2",
+    "figlet": "^1.7.0",
+    "inquirer": "^8.0.0"
+  },
+  "devDependencies": {
+    "canvas": "^2.11.2"
+  }
+}
