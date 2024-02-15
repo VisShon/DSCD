@@ -4,13 +4,12 @@
   "description": "",
   "main": "Server.js",
   "scripts": {
-    "start": "node client.js",
-    "client": "node client.js",
-    "server": "node server.js"
+    "start": "node client.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@google-cloud/storage": "^7.7.0",
     "amqplib": "^0.10.3",
     "chalk": "4.1.2",
     "figlet": "^1.7.0",

@@ -3,8 +3,8 @@ const chalk = require("chalk")
 const figlet = require("figlet")
 const amqp = require("amqplib")
 
-const user = require("./controllers/user.js")
-const youtuber = require("./controllers/youtuber.js")
+const user = require("./utils/user.js")
+const youtuber = require("./utils/youtuber.js")
 
 let connection
 
@@ -136,29 +136,24 @@ const servicePrompt = async () => {
 }
 
 
-
-
-//--------------------------- Login -------------------------------------
-const login = async (username,password,channel) => {
-
-	// this fuction is used to login or create a new account(queue) for the user
-	try{
-		await channel.assertQueue(`${username+password}`, {
-			exclusive: true
-		})
-		console.log("SUCESS USER",await channel.checkQueue(`${username+password}`))
-		return true
-	}
-	catch{
-		return false
-	}
+const sendMessage = async(url,request,channel,data)=>{
+	await channel.sendToQueue(
+		url,
+		Buffer.from(JSON.stringify(data)),
+		{
+			headers:{
+				request
+			}
+		}
+	)
+	return true
 }
-
 
 
 // Function to start the Terminal YouTube application
 const startTerminalYouTube  = async () =>  {
 
+	let promptSelection = 0
 	displayHomePage()
 
 
@@ -167,92 +162,105 @@ const startTerminalYouTube  = async () =>  {
 		durable: false //change to true in production
 	})
 
-
 	let auth
-	try{
-		auth = await loginPrompt()
-		auth.success = await login(auth.username, auth.password, channel)
-	}
-	catch(e){
-		console.warn(e)
-	}
+	let service
+	let uid
+	let yid
 
+	prompt:while(true){
 
-
-	if(auth.success){
-		const service = await servicePrompt()
-
-		if(service === "YouTube Studio"){
-			const selection = await youtuberPrompt(auth)
-			switch (selection) {
-				case "Publish":
-					await youtuber.publishVideo(auth,channel)
-					break
-
-				case "Videos":
-					
-					break
-			
-				case "Subscribers":
-					
-					break
-				
-				case "<":
-					
-					break
-
-				default:
-					break
-			}
-
-		}
-
+		service = await servicePrompt()
 		
-		else if(service === "YouTube"){
-			const selection = await userPrompt(auth)
-			await channel.assertQueue(`${auth.username+auth.password}`,{
-				exclusive:true
-			})
-
-			switch (selection) {
-				case "Search":
-					
-					break
-
-				case "Channels":
-					await user.getChannels(channel)
-					break
+		if(service){
 			
-				case "Notifications":
-					await channel.bindQueue(`${auth.username+auth.password}`, "YOUTUBE", "ss");
-					await user.receiveNotifications(auth,channel)
-					break
+			if(service === "YouTube Studio"){
+				await channel.assertQueue("YOUTUBER_REQUESTS", { durable: true })
+
+				try{
+					auth = await loginPrompt()
+					await sendMessage("YOUTUBER_REQUESTS","auth",channel,{
+						"username":auth.username,
+						"password":auth.password,
+					})
+					
+				}
+				catch(e){
+					console.warn(e)
+				}
+				const selection = await youtuberPrompt(auth)
+
+				// switch (selection) {
+				// 	case "Publish":
+				// 		sendMessage("YOUTUBER_REQUESTS","publishVideo",channel,{
+				// 			"youtuber":"c51ffdea-c35a-44d2-9ca5-d78dc191a436",
+				// 			"link":"link",
+				// 			"title":"video",
+				// 			"description":"first video"
+				// 		})
+				// 		break
+		
+				// 	case "Videos":
+						
+				// 		break
 				
-				case "Subscriptions":
+				// 	case "Subscribers":
+						
+				// 		break
 					
-					break
+				// 	case "<":
+				// 		continue prompt
+	
+				// 	case "exit":
+				// 		continue prompt
 
-				case "<":
-					
-					break
-
-				default:
-					break
+				// 	default:
+				// 		break
+				// }
+		
 			}
+		
 			
+			else if(service === "YouTube"){
+				await channel.assertQueue("USER_REQUESTS", { durable: true })
+				const selection = await userPrompt(auth)
+		
+				// switch (selection) {
+				// 	case "Search":
+						
+				// 		break
+		
+				// 	case "Channels":
+				// 		break
+				
+				// 	case "Notifications":
+				// 		break
+					
+				// 	case "Subscriptions":
+						
+				// 		break
+		
+				// 	case "<":
+				// 		continue prompt
+
+				// 	case "exit":
+				// 		continue prompt
+		
+				// 	default:
+				// 		break
+				// }
+				
+			}
+		
+			else return
 		}
 
-		else return
 	}
-
-
 	
-	setTimeout(async () => {
-		await channel.close()
-		await connection.close()
-	},5000)
+	// setTimeout(async () => {
+	// 	await channel.close()
+	// 	await connection.close()
+	// },5000)
 	
-	return
 }
 
 // Start the application
