@@ -2,15 +2,17 @@ const inquirer = require("inquirer")
 const chalk = require("chalk")
 const figlet = require("figlet")
 const amqp = require("amqplib")
+const { v4: uuidv4 } = require('uuid')
+const { spawn } = require('child_process');
+const axios = require('axios')
+const fs = require('fs')
 
-const user = require("./utils/user.js")
-const youtuber = require("./utils/youtuber.js")
+// #region --------------------------- Setup --------------------------------------------
 
-let connection
+let connection = null
+const correlationId = uuidv4()
+let replyQueue = ''
 
-
-
-//--------------------------- Setup -------------------------------------
 const createConnection = async (url) => {
 	try{
 		connection = await amqp.connect(url,{})
@@ -20,8 +22,9 @@ const createConnection = async (url) => {
 		console.warn(e)
 	}
 }
+// #endregion
 
-//--------------------------- Display Home -------------------------------------
+// #region --------------------------- Display Home -------------------------------------
 const displayHomePage = () => {
 
 	console.log(chalk.white(figlet.textSync("Terminal Youtube", {
@@ -56,11 +59,9 @@ const displayHomePage = () => {
 	console.log(chalk.gray("Use arrow keys to navigate, and press Enter to select."))
 
 }
+// #endregion 
 
-
-
-
-//--------------------------- Prompts -------------------------------------
+// #region  -------------------------- Prompts ------------------------------------------
 
 // Login Prompt 
 const loginPrompt = async () => {
@@ -80,17 +81,17 @@ const loginPrompt = async () => {
 
 // User Prompt
 const userPrompt = async (user) => {
-
 	const features =  await inquirer.prompt([
 		{
 			type: "list",
 			name: "selection",
-			message: `Welcome ${user.username}`,
+			message: `Welcome ${user}`,
 			choices:[
 				"Search",
 				"Channels",
 				"Notifications",
 				"Subscriptions",
+				"exit",
 				"<",
 			]
 		}
@@ -105,17 +106,39 @@ const youtuberPrompt = async (user) => {
 		{
 			type: "list",
 			name: "selection",
-			message: `Welcome ${user.username}`,
+			message: `Welcome ${user}`,
 			choices:[
 				"Publish",
 				"Videos",
 				"Subscribers",
-				"<"
+				"exit",
+				"<",
 			]
 		}
 	])
 
 	return features.selection
+}
+
+// Video publish Prompt
+const videoPrompt = async (user) => {
+	return await inquirer.prompt([
+		{
+			type: "input",
+			name: "title",
+			message: "Enter Title:",
+		},
+		{
+			type: "input",
+			name: "description",
+			message: "Enter Description:",
+		},
+		{
+			type: "input",
+			name: "path",
+			message: "Enter Path:",
+		},
+	])
 }
 
 // Services Prompt 
@@ -125,7 +148,7 @@ const servicePrompt = async () => {
 			type: "list",
 			name: "service",
 			message: "",
-			choices: ["YouTube", "YouTube Studio"],
+			choices: ["YouTube Studio","YouTube"],
 		},
 	])
 
@@ -135,133 +158,388 @@ const servicePrompt = async () => {
 	return selection.service
 }
 
-
-const sendMessage = async(url,request,channel,data)=>{
-	await channel.sendToQueue(
-		url,
-		Buffer.from(JSON.stringify(data)),
+// Subscribe Prompt 
+const subscribePrompt = async () => {
+	const selection = await inquirer.prompt([
 		{
-			headers:{
-				request
+			type: "confirm",
+			name: "confirm",
+			message: "Do You Want to Subscribe to a Channel?",
+		},
+	])
+
+	if(selection.confirm){
+		console.log(chalk.redBright("-----------------------------------------------------"))
+		const selection = await inquirer.prompt([
+			{
+				type: "input",
+				name: "index",
+				message: "Enter Channel Index:",
 			}
-		}
-	)
-	return true
+		])
+
+		return selection.index
+	}
+
+	else return ''
 }
 
+// UnSubscribe Prompt 
+const unSubscribePrompt = async () => {
+	const selection = await inquirer.prompt([
+		{
+			type: "confirm",
+			name: "confirm",
+			message: "Do You Want to Unsubscribe to a Channel?",
+		},
+	])
 
-// Function to start the Terminal YouTube application
-const startTerminalYouTube  = async () =>  {
+	if(selection.confirm){
+		console.log(chalk.redBright("-----------------------------------------------------"))
+		const selection = await inquirer.prompt([
+			{
+				type: "input",
+				name: "index",
+				message: "Enter Channel Index:",
+			}
+		])
 
-	let promptSelection = 0
-	displayHomePage()
+		return selection.index
+	}
 
+	else return ''
+}
 
-	const channel = await createConnection("amqp://vishnu:shon123@localhost:5672")
-	channel.assertExchange("YOUTUBE", "topic", {
-		durable: false //change to true in production
+// Playback Prompt 
+const videoPlaybackPrompt = async () => {
+
+	const selection = await inquirer.prompt([
+		{
+			type: "confirm",
+			name: "confirm",
+			message: "Do You Want to Watch a Video?",
+		},
+	])
+
+	if(selection.confirm){
+		console.log(chalk.redBright("-----------------------------------------------------"))
+		const selection = await inquirer.prompt([
+			{
+				type: "input",
+				name: "index",
+				message: "Enter Video Index:",
+			}
+		])
+
+		return selection.index
+	}
+
+	else return ''
+}
+
+// #endregion 
+
+// #region  -------------------------- Helper Functions ---------------------------------
+
+const sendMessage = async(url,request,channel,replyQueue,data)=>{
+	try{
+		return await channel.sendToQueue(
+			url,
+			Buffer.from(JSON.stringify(data)),
+			{
+				headers:{
+					request
+				},
+				correlationId,
+				replyTo:replyQueue.queue,
+			}
+		)
+	}
+	catch(e){
+		console.warn(e)
+	}
+}
+
+const response = async(channel,replyQueue)=>{
+	let res
+
+	try{
+		await channel.prefetch(1)
+		const req = await channel.consume(replyQueue.queue, 
+			async (message) => {
+			if (message.properties.correlationId === correlationId)
+				res = JSON.parse(message?.content)
+		}, {
+			noAck: true
+		})
+
+		await channel.cancel(req.consumerTag)
+	}
+	catch(e){
+		console.warn(e)
+	}
+
+	return res
+}
+
+const login = async(service,channel) => {
+
+	try{
+		await channel.assertQueue(service, { durable: true })
+		replyQueue = await channel.assertQueue('', {
+            exclusive: true
+        })
+	}
+	catch(e){
+		console.warn(e)
+	}
+
+	const prompt = await loginPrompt()
+	await sendMessage(service,"auth",channel,replyQueue,{
+		"username":prompt.username,
+		"password":prompt.password,
 	})
 
-	let auth
+
+	const res = await response(channel,replyQueue)
+	return res
+}
+
+const printTable = (data, propertyToSkip) =>{
+    const modifiedData = data.map(obj => {
+        const { [propertyToSkip]: omit, ...rest } = obj
+        return rest
+    })
+
+    console.table(modifiedData)
+}
+
+const downloadVideo = async(url, outputPath) =>{
+    try {
+        const response = await axios({
+            url: url,
+            method: 'GET',
+            responseType: 'stream'
+        })
+
+        const writer = fs.createWriteStream(outputPath)
+        response.data.pipe(writer)
+
+        return new Promise((resolve, reject) => {
+            writer.on('finish', resolve)
+            writer.on('error', reject)
+        })
+    } catch (error) {
+        throw new Error('Failed to download video: ' + error.message)
+    }
+}
+
+// #endregion 
+
+// #region --------------------------- Runner --------------------------------------------
+
+const startTerminalYouTube  = async () =>  {
+
+	const channel = await createConnection("amqp://vishnu:shon123@localhost:5672")
+
 	let service
 	let uid
 	let yid
 
-	prompt:while(true){
+
+	displayHomePage()
+	
+	auth:while(true){
 
 		service = await servicePrompt()
 		
 		if(service){
-			
 			if(service === "YouTube Studio"){
-				await channel.assertQueue("YOUTUBER_REQUESTS", { durable: true })
-
-				try{
-					auth = await loginPrompt()
-					await sendMessage("YOUTUBER_REQUESTS","auth",channel,{
-						"username":auth.username,
-						"password":auth.password,
-					})
-					
-				}
-				catch(e){
-					console.warn(e)
-				}
-				const selection = await youtuberPrompt(auth)
-
-				// switch (selection) {
-				// 	case "Publish":
-				// 		sendMessage("YOUTUBER_REQUESTS","publishVideo",channel,{
-				// 			"youtuber":"c51ffdea-c35a-44d2-9ca5-d78dc191a436",
-				// 			"link":"link",
-				// 			"title":"video",
-				// 			"description":"first video"
-				// 		})
-				// 		break
-		
-				// 	case "Videos":
-						
-				// 		break
 				
-				// 	case "Subscribers":
-						
-				// 		break
-					
-				// 	case "<":
-				// 		continue prompt
-	
-				// 	case "exit":
-				// 		continue prompt
+				yid  = await login("YOUTUBER_REQUESTS", channel)
 
-				// 	default:
-				// 		break
-				// }
-		
-			}
-		
+				youtuber:while(yid){
+					const selection = await youtuberPrompt(yid)
+					switch (selection) {
+
+						case "Publish":{
+
+							const video =  await videoPrompt()
+							await sendMessage("YOUTUBER_REQUESTS","publishVideo",channel,replyQueue,{
+								"youtuber":yid,
+								"link":video.path,
+								"title":video.title,
+								"description":video.description,
+							})
+
+							const res = await response(channel,replyQueue)
+							console.log(res)
+
+							console.log(chalk.redBright("-----------------------------------------------------"))
+							continue youtuber
+						}
 			
-			else if(service === "YouTube"){
-				await channel.assertQueue("USER_REQUESTS", { durable: true })
-				const selection = await userPrompt(auth)
-		
-				// switch (selection) {
-				// 	case "Search":
-						
-				// 		break
-		
-				// 	case "Channels":
-				// 		break
-				
-				// 	case "Notifications":
-				// 		break
-					
-				// 	case "Subscriptions":
-						
-				// 		break
-		
-				// 	case "<":
-				// 		continue prompt
+						case "Videos":{
+							await sendMessage("YOUTUBER_REQUESTS","getYoutuberVideos",channel,replyQueue,{
+								"youtuber":yid,
+							})
 
-				// 	case "exit":
-				// 		continue prompt
+							const res = await response(channel,replyQueue)
+							printTable(res,"link")
+
+							console.log(chalk.redBright("-----------------------------------------------------"))
+							continue youtuber
+						}
+					
+						case "Subscribers":{
+							await sendMessage("YOUTUBER_REQUESTS","getSubscribers",channel,replyQueue,{
+								"youtuber":yid,
+							})
+
+							const res = await response(channel,replyQueue)
+							console.log(res, "Subscribers")
+
+							console.log(chalk.redBright("-----------------------------------------------------"))
+							continue youtuber
+						}
+						
+						case "<":{
+							break youtuber
+						}
 		
-				// 	default:
-				// 		break
-				// }
-				
+						case "exit":{
+							await channel.close()
+							await connection.close()
+							process.exit(0)
+						}
+					}	
+				}
+		
 			}
 		
-			else return
+			else if(service === "YouTube"){
+
+				const uid = await login("USER_REQUESTS",channel)
+
+				if(uid){
+					user:while(uid){
+						const selection = await userPrompt(uid)
+						switch (selection) {
+							case "Search":{
+
+								const searchParam = await inquirer.prompt([
+									{
+										type: "input",
+										name: "title",
+										message: "Search Title:"
+									}
+								])
+
+								await sendMessage("USER_REQUESTS","getVideos",channel,replyQueue,{
+									"params":searchParam.title
+								})
+
+								const res = await response(channel,replyQueue)
+								printTable(res,"link")
+
+								const playbackReq = await videoPlaybackPrompt()
+
+								if(playbackReq){
+									const link = (res[playbackReq])?.link
+									console.log(res)
+									if(link){
+										await downloadVideo(link,`./assets/videos/${playbackReq}.mp4`)
+										const childProcess = spawn(`mplayer ./assets/videos/${playbackReq}.mp4`, {
+											shell: true,
+											detached: true,
+											stdio: 'ignore'
+										})
+										childProcess.unref()
+									}
+								}
+
+								console.log(chalk.redBright("-----------------------------------------------------"))
+								continue user
+							}
+								
+							case "Notifications":{
+
+								const res = await response(channel,replyQueue)
+								console.log(res)
+
+								console.log(chalk.redBright("-----------------------------------------------------"))
+								continue user
+							}
+				
+							case "Channels":{
+								await sendMessage("USER_REQUESTS","getChannels",channel,replyQueue,{})
+
+								const res = await response(channel,replyQueue)
+								console.table(res)
+
+								console.log(chalk.redBright("-----------------------------------------------------"))
+
+								const subscriptionReq = await subscribePrompt()
+								
+								if(subscriptionReq){
+									await sendMessage("USER_REQUESTS","updateSubscription",channel,replyQueue,{
+										"user":uid,
+										"youtuber":subscriptionReq,
+										"subscription":true
+									})
+									const res = await response(channel,replyQueue)
+
+									console.log(res)
+									console.log(chalk.redBright("-----------------------------------------------------"))
+								}
+
+								continue user
+							}
+					
+							
+							case "Subscriptions":{
+								await sendMessage("USER_REQUESTS","getSubscriptions",channel,replyQueue,{
+									"user":uid,
+								})
+
+								const res = await response(channel,replyQueue)
+								console.log(res)
+
+								console.log(chalk.redBright("-----------------------------------------------------"))
+
+								const unSubscriptionReq = await unSubscribePrompt()
+								
+								if(unSubscriptionReq){
+									await sendMessage("USER_REQUESTS","updateSubscription",channel,replyQueue,{
+										"user":uid,
+										"youtuber":unSubscriptionReq,
+										"subscription":false
+									})
+									const res = await response(channel,replyQueue)
+									
+									console.log(res)
+									console.log(chalk.redBright("-----------------------------------------------------"))
+								}
+								
+								continue user
+							}
+								
+				
+							case "<":{
+								continue auth
+							}
+		
+							case "exit":{
+								await channel.close()
+								await connection.close()
+								process.exit(0)
+							}
+						}
+					}
+				}
+			}
 		}
-
 	}
-	
-	// setTimeout(async () => {
-	// 	await channel.close()
-	// 	await connection.close()
-	// },5000)
-	
 }
-
-// Start the application
 startTerminalYouTube()
+// #endregion

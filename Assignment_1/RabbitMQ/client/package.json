@@ -11,9 +11,12 @@
   "dependencies": {
     "@google-cloud/storage": "^7.7.0",
     "amqplib": "^0.10.3",
+    "axios": "^1.6.7",
     "chalk": "4.1.2",
     "figlet": "^1.7.0",
-    "inquirer": "^8.0.0"
+    "inquirer": "^8.0.0",
+    "node-mplayer": "^0.0.6",
+    "uuid": "^9.0.1"
   },
   "devDependencies": {
     "canvas": "^2.11.2"
