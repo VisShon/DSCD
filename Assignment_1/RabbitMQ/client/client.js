@@ -16,6 +16,7 @@ let replyQueue = ''
 const createConnection = async (url) => {
 	try{
 		connection = await amqp.connect(url,{})
+		console.log(connection)
 		return channel = await connection.createChannel()
 
 	}catch(e){
