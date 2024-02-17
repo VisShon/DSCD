@@ -260,7 +260,7 @@ const consumeYouTuberRequests = async (channel) => {
 
 (async () => {
 
-	const channel = await createConnection("amqp://vishnu:shon123@localhost:5672")
+	const channel = await createConnection("amqp://guest:guest@34.135.86.77:5672")
 
 	await channel.assertQueue("USER_REQUESTS", { durable: true })
 	await channel.assertQueue("YOUTUBER_REQUESTS", { durable: true })
