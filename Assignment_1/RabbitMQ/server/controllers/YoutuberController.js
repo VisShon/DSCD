@@ -18,16 +18,24 @@ const publishVideo = async (youtuber,link,title,description) => {
 
 		db.youtubers[youtuber]?.videos?.add(id)
 		console.log(`${youtuber} VIDEO UPLOADED`)
+
+		for(user of db.youtubers[youtuber]?.subscribers) {
+			console.log("hello")
+			try{
+				await channel.assertQueue(user, { durable: true })
+				await channel.sendToQueue(
+					user,
+					Buffer.from(`${youtuber} uploaded new video:${title}`),
+				)
+			}
+			catch(e){
+				console.warn(e)
+			}
+		}
+
 		return "SUCCESS"
 	}
 
-	return "NOT_FOUND"
-}
-
-// Function to get views of the video from youtubeServer
-const getViews = (video) => {
-	if(db.videos[video])
-		return db.videos[video]?.views
 	return "NOT_FOUND"
 }
 
@@ -38,9 +46,11 @@ const getYoutuberVideos = (youtuber) => {
 		
 		let videos = []
 
-		videoids?.forEach(
-			(id)=>videos.push(db.videos[id])
-		)
+		if(videoids){
+			videoids?.forEach(
+				(id)=>videos.push(db.videos[id])
+			)
+		}
 
 		return videos
 	}
@@ -51,14 +61,7 @@ const getYoutuberVideos = (youtuber) => {
 const getSubscribers = (youtuber) => {
 	if(db.youtubers[youtuber]){
 		const subscriberids = db.youtubers[youtuber]?.subscribers
-
-		let subscribers = []
-
-		subscriberids?.forEach(
-			(id)=>subscribers.push(db.users[id])
-		)
-
-		return subscribers
+		return subscriberids.size
 	}
 	return "NOT_FOUND"
 }
@@ -66,7 +69,6 @@ const getSubscribers = (youtuber) => {
 
 module.exports ={
 	publishVideo,
-	getViews,
 	getYoutuberVideos,
 	getSubscribers,
 }

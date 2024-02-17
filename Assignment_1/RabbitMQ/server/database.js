@@ -5,14 +5,13 @@ let videos = {}
 // User = {
 // 	username,
 // 	password,
-// 	notification[],
 // 	subscriptions[],
 // }
 
 // Youtuber = {
 // 	username,
 // 	password,
-// 	subscribers,
+// 	subscribers[],
 //	videos[],
 // }
 

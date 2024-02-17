@@ -1,3 +1,5 @@
+// #region --------------------------- Setup --------------------------------------------
+
 const inquirer = require("inquirer")
 const chalk = require("chalk")
 const figlet = require("figlet")
@@ -6,8 +8,6 @@ const { v4: uuidv4 } = require('uuid')
 const { spawn } = require('child_process');
 const axios = require('axios')
 const fs = require('fs')
-
-// #region --------------------------- Setup --------------------------------------------
 
 let connection = null
 const correlationId = uuidv4()
@@ -135,8 +135,8 @@ const videoPrompt = async (user) => {
 		},
 		{
 			type: "input",
-			name: "path",
-			message: "Enter Path:",
+			name: "link",
+			message: "Enter Link:",
 		},
 	])
 }
@@ -282,6 +282,20 @@ const response = async(channel,replyQueue)=>{
 	return res
 }
 
+const pollNotifications = async(channel,uid)=>{
+
+	await channel.assertQueue(uid, { durable: true })
+	const req = await channel.consume(uid, 
+		async (message) =>{
+			console.log("\n"+message?.content?.toString())
+		},
+	{
+		noAck: true
+	})
+
+	return req
+}
+
 const login = async(service,channel) => {
 
 	try{
@@ -306,7 +320,7 @@ const login = async(service,channel) => {
 }
 
 const printTable = (data, propertyToSkip) =>{
-    const modifiedData = data.map(obj => {
+    const modifiedData = data?.map(obj => {
         const { [propertyToSkip]: omit, ...rest } = obj
         return rest
     })
@@ -341,19 +355,17 @@ const downloadVideo = async(url, outputPath) =>{
 const startTerminalYouTube  = async () =>  {
 
 	const channel = await createConnection("amqp://vishnu:shon123@localhost:5672")
+	displayHomePage()
 
 	let service
 	let uid
 	let yid
 
-
-	displayHomePage()
-	
 	auth:while(true){
 
-		service = await servicePrompt()
-		
+		service = await servicePrompt()		
 		if(service){
+
 			if(service === "YouTube Studio"){
 				
 				yid  = await login("YOUTUBER_REQUESTS", channel)
@@ -367,7 +379,7 @@ const startTerminalYouTube  = async () =>  {
 							const video =  await videoPrompt()
 							await sendMessage("YOUTUBER_REQUESTS","publishVideo",channel,replyQueue,{
 								"youtuber":yid,
-								"link":video.path,
+								"link":video.link,
 								"title":video.title,
 								"description":video.description,
 							})
@@ -380,6 +392,7 @@ const startTerminalYouTube  = async () =>  {
 						}
 			
 						case "Videos":{
+
 							await sendMessage("YOUTUBER_REQUESTS","getYoutuberVideos",channel,replyQueue,{
 								"youtuber":yid,
 							})
@@ -392,6 +405,7 @@ const startTerminalYouTube  = async () =>  {
 						}
 					
 						case "Subscribers":{
+
 							await sendMessage("YOUTUBER_REQUESTS","getSubscribers",channel,replyQueue,{
 								"youtuber":yid,
 							})
@@ -414,19 +428,17 @@ const startTerminalYouTube  = async () =>  {
 						}
 					}	
 				}
-		
 			}
 		
 			else if(service === "YouTube"){
 
-				const uid = await login("USER_REQUESTS",channel)
+				uid = await login("USER_REQUESTS",channel)
 
 				if(uid){
 					user:while(uid){
 						const selection = await userPrompt(uid)
 						switch (selection) {
 							case "Search":{
-
 								const searchParam = await inquirer.prompt([
 									{
 										type: "input",
@@ -463,12 +475,20 @@ const startTerminalYouTube  = async () =>  {
 							}
 								
 							case "Notifications":{
-
-								const res = await response(channel,replyQueue)
-								console.log(res)
-
-								console.log(chalk.redBright("-----------------------------------------------------"))
-								continue user
+								const req = await pollNotifications(channel,uid)
+								const selection = await inquirer.prompt([
+									{
+										type: "confirm",
+										name: "confirm",
+										message: "Do You Want to Go Back?",
+									},
+								])
+							
+								if(selection.confirm){
+									await channel.cancel(req.consumerTag)
+									continue user
+								}
+								
 							}
 				
 							case "Channels":{
@@ -503,7 +523,7 @@ const startTerminalYouTube  = async () =>  {
 								})
 
 								const res = await response(channel,replyQueue)
-								console.log(res)
+								printTable(res,"subscribers")
 
 								console.log(chalk.redBright("-----------------------------------------------------"))
 
@@ -538,8 +558,11 @@ const startTerminalYouTube  = async () =>  {
 					}
 				}
 			}
+
 		}
 	}
 }
+
 startTerminalYouTube()
+
 // #endregion

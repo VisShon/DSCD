@@ -24,12 +24,10 @@ const login = (type,username,password) => {
 				return uid
 
 			console.log("ADDING NEW USER")
-			// uid = uuidv4()
-			uid="c51ffdea-c35a-44d2-9ca5-d78dc191a436"
+			uid = uuidv4()
 			db.users[uid] = {
 				username:username,
 				password:password,
-				notification: new Set(),
 				subscriptions: new Set(),
 			}
 
@@ -47,16 +45,20 @@ const login = (type,username,password) => {
 				return yid
 
 			console.log("ADDING NEW YOUTUBER")
-			// yid = uuidv4()
-			yid="aac8f5f2-8164-4eee-bfec-8c98f76a08d5"
+			yid = uuidv4()
+			// yid="aac8f5f2-8164-4eee-bfec-8c98f76a08d5"
 			db.youtubers[yid] = {
 				username:username,
 				password:password,
-				subscribers: 0,
+				subscribers: new Set(),
 				videos: new Set(),
 			}
 			console.log("SUCCESS")
+			console.log(db.users)
 			return yid
+
+
+			
 	}
 
 	return "INVALID_REQUEST"

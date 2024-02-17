@@ -1,17 +1,16 @@
+// #region ------------------- Setup -----------------------------------
+
 const amqp = require("amqplib")
 const {
-	getNotifications,
 	getSubscriptions,
 	updateSubscription,
 	getChannels,
-	getChannelVideos,
 	getVideos,
 	getVideo
 } = require("./controllers/UserControllers.js")
 
 const {
 	publishVideo,
-	getViews,
 	getYoutuberVideos,
 	getSubscribers,
 } = require("./controllers/YoutuberController.js")
@@ -21,9 +20,9 @@ const {
 } = require("./controllers/AuthController.js")
 
 
+
 let connection
 
-//--------------------------- Setup -------------------------------------
 const createConnection = async (url) => {
 	try{
 		connection = await amqp.connect(url,{})
@@ -34,47 +33,30 @@ const createConnection = async (url) => {
 	}
 }
 
-/*
-	auth
-	{
-		"username":"vishnu",
-		"password":"shon123"
-	}
+// #endregion
 
-	updateSubscriptions
-	{
-		"user":"c51ffdea-c35a-44d2-9ca5-d78dc191a436",
-		"youtuber":"aac8f5f2-8164-4eee-bfec-8c98f76a08d5",
-		"subscription":true
-	}
+// #region ------------------- Helper Function -------------------------
 
-	getSubscriptions
-	{
-		"user":"c51ffdea-c35a-44d2-9ca5-d78dc191a436"
+// response logic
+const response = async (channel,replyTo, correlationId, data) => {
+	try{
+		await channel.sendToQueue(replyTo,
+			Buffer.from(JSON.stringify(data)),
+			{
+				correlationId
+			}
+		)
+		return true
+	}catch(e){
+		console.log("Error")
+		console.warn(e)
 	}
+}
 
-	getChannels
-	{
-		"user":"c51ffdea-c35a-44d2-9ca5-d78dc191a436"
-	}
-
-	publishVideo
-	{
-		"youtuber":"c51ffdea-c35a-44d2-9ca5-d78dc191a436",
-		"link":"link",
-		"title":"video",
-		"description":"first video"
-	}
-
-	getChannelVideos
-	{
-		"youtuber":"c51ffdea-c35a-44d2-9ca5-d78dc191a436",
-	}
-*/
-
-//--------------------------- User Queue -------------------------------------
+// User Queue
 const consumeUserRequests = async (channel) => {
 	try{
+		channel.prefetch(1)
 		await channel.consume(
 			"USER_REQUESTS",
 			async (message) => {
@@ -89,16 +71,29 @@ const consumeUserRequests = async (channel) => {
 											req.password,
 										)
 							console.log(res)
+
+							await response(
+								channel,
+								message.properties?.replyTo,
+								message.properties?.correlationId,
+								res
+							)
 							break
 						}
-
-
-						case "getNotifications":
 							
 						case "getSubscriptions":{
 							const req = JSON.parse(message?.content)
 							const res = await getSubscriptions(req.user)
+
 							console.log(res)
+
+							await response(
+								channel,
+								message.properties?.replyTo,
+								message.properties?.correlationId,
+								res
+							)
+
 							break
 						}
 
@@ -109,6 +104,16 @@ const consumeUserRequests = async (channel) => {
 												req.youtuber,
 												req.subscription
 											)
+
+							console.log(res)
+
+							await response(
+								channel,
+								message.properties?.replyTo,
+								message.properties?.correlationId,
+								res
+							)
+
 							console.log(res)
 							break
 						}
@@ -116,13 +121,12 @@ const consumeUserRequests = async (channel) => {
 						case "getChannels":{
 							const res = getChannels()
 							console.log(res)
-							break
-						}
-
-						case "getChannelVideos":{
-							const req = JSON.parse(message?.content)
-							const res = await getChannelVideos(req.youtuber)
-							console.log(res)
+							await response(
+								channel,
+								message.properties?.replyTo,
+								message.properties?.correlationId,
+								res
+							)
 							break
 						}
 
@@ -130,13 +134,25 @@ const consumeUserRequests = async (channel) => {
 							const req = JSON.parse(message?.content)
 							const res =  getVideos(req.params)
 							console.log(res)
+							await response(
+								channel,
+								message.properties?.replyTo,
+								message.properties?.correlationId,
+								res
+							)
 							break
 						}
 
 						case "getVideo":{
 							const req = JSON.parse(message?.content)
-							const res =  getVideo(req.title)
+							const res =  getVideo(req.index)
 							console.log(res)
+							await response(
+								channel,
+								message.properties?.replyTo,
+								message.properties?.correlationId,
+								res
+							)
 							break
 						}
 					}
@@ -150,9 +166,10 @@ const consumeUserRequests = async (channel) => {
 	}
 }
 
-//--------------------------- Youtuber Queue -------------------------------------
+// Youtuber Queue
 const consumeYouTuberRequests = async (channel) => {
 	try{
+		channel.prefetch(1)
 		await channel.consume(
 			"YOUTUBER_REQUESTS",
 			async (message) => {
@@ -166,7 +183,15 @@ const consumeYouTuberRequests = async (channel) => {
 											req.username,
 											req.password,
 										)
+							
 							console.log(res)
+							
+							await response(
+								channel,
+								message.properties?.replyTo,
+								message.properties?.correlationId,
+								res
+							)
 							break
 						}
 
@@ -178,28 +203,44 @@ const consumeYouTuberRequests = async (channel) => {
 											req.title,
 											req.description
 										)
+							
 							console.log(res)
-							break
-						}
-
-						case "getViews":{
-							const req = JSON.parse(message?.content)
-							const res =  await getViews(req.video)
-							console.log(res)
+							
+							await response(
+								channel,
+								message.properties?.replyTo,
+								message.properties?.correlationId,
+								res
+							)
 							break
 						}
 
 						case "getYoutuberVideos":{
 							const req = JSON.parse(message?.content)
 							const res =  getYoutuberVideos(req.youtuber)
+							
 							console.log(res)
+							await response(
+								channel,
+								message.properties?.replyTo,
+								message.properties?.correlationId,
+								res
+							)
 							break
 						}
 
 						case "getSubscribers":{
 							const req = JSON.parse(message?.content)
 							const res =  getSubscribers(req.youtuber)
+							
 							console.log(res)
+							
+							await response(
+								channel,
+								message.properties?.replyTo,
+								message.properties?.correlationId,
+								res
+							)
 							break
 						}
 					}
@@ -214,6 +255,7 @@ const consumeYouTuberRequests = async (channel) => {
 	}
 }
 
+// #endregion
 
 
 (async () => {
@@ -226,8 +268,4 @@ const consumeYouTuberRequests = async (channel) => {
 	await consumeUserRequests(channel)
 	await consumeYouTuberRequests(channel)
 
-	// setTimeout(async () => {
-	// 	await channel.close()
-	// 	await connection.close()
-	// },5000)
 })()

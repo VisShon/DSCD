@@ -1,30 +1,24 @@
 const db = require("../database.js")
 
-// Function to get previous notifications
-const getNotifications = (user) => {
-    // if(user)
-	//     return db.users[user].notifications
-}
-
 // Function to subscribe a channel
 const updateSubscription = async (user,youtuber,subscribe) => {
 	if(!youtuber)
 		return "INVALID_REQUEST"
 
-	if(db.youtubers[youtuber]){
+	const youtuberid = Object.keys(db.youtubers)[youtuber]
+
+	if(db.youtubers[youtuberid]){
 		switch (subscribe) {
 			case true:{
-				await db.users[user]?.subscriptions?.add(youtuber)
-				let subscribers = db.youtubers[youtuber]?.subscribers
-				db.youtubers[youtuber].subscribers = 1+subscribers
-				console.log(`${user} SUBSCRIBED TO ${youtuber}`)
+				await db.users[user]?.subscriptions?.add(youtuberid)
+				await db.youtubers[youtuberid]?.subscribers?.add(user)
+				console.log(`${user} SUBSCRIBED TO ${youtuberid}`)
 				break
 			}
 			case false:{
-				await db.users[user]?.subscriptions?.remove(youtuber)
-				let subscribers = db.youtubers[youtuber]?.subscribers
-				db.youtubers[youtuber].subscribers = 1-subscribers
-				console.log(`${user} UNSUBSCRIBED TO ${youtuber}`)
+				await db.users[user]?.subscriptions?.delete(youtuberid)
+				await db.youtubers[youtuberid]?.subscribers?.delete(user)
+				console.log(`${user} UNSUBSCRIBED TO ${youtuberid}`)
 				break
 			}
 		}
@@ -35,12 +29,19 @@ const updateSubscription = async (user,youtuber,subscribe) => {
 }
 
 // Function to get all subscribed channels
-const getSubscriptions = (user) => {
+const getSubscriptions = async (user) => {
 	if(!user)
 		return "INVALID_REQUEST"
 
-	if(db.users[user])
-		return db.users[user]?.subscriptions
+	if(db.users[user]){
+		let res = []
+
+		await db.users[user]?.subscriptions?.forEach(id => {
+			res.push({id,name:db.youtubers[id].username})
+		})
+
+		return res
+	}
 
 	return "NOT_FOUND"
 }
@@ -58,25 +59,6 @@ const getVideos = (param) => {
 			)
 }
 
-// Function to get all videos of a channel
-const getChannelVideos = async (youtuber) => {
-	if(!youtuber)
-		return "INVALID_REQUEST"
-
-	if(db.youtubers[youtuber]){
-		const videoids = db.youtubers[youtuber]?.videos
-		
-		let videos = []
-
-		await videoids?.forEach(
-			(id)=>videos.push(db.videos[id])
-		)
-
-		return videos
-	}
-
-	return "NOT_FOUND"
-}
 
 // Function to get video
 const getVideo = (title) => {
@@ -91,11 +73,9 @@ const getVideo = (title) => {
 
 
 module.exports ={
-	getNotifications,
 	getSubscriptions,
 	updateSubscription,
 	getChannels,
-	getChannelVideos,
 	getVideos,
 	getVideo,
 }
