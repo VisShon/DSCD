@@ -354,7 +354,7 @@ const downloadVideo = async(url, outputPath) =>{
 
 const startTerminalYouTube  = async () =>  {
 
-	const channel = await createConnection("amqp://34.131.18.49:5672")
+	const channel = await createConnection("amqp://vishnu:shon123@34.131.141.142:5672")
 	displayHomePage()
 
 	let service
