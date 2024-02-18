@@ -163,7 +163,8 @@ const consumeUserRequests = async (channel) => {
 
 	}catch(e){
 		console.warn(e)
-	}
+	} 
+	
 }
 
 // Youtuber Queue
@@ -260,7 +261,7 @@ const consumeYouTuberRequests = async (channel) => {
 
 (async () => {
 
-	const channel = await createConnection("amqp://guest:guest@34.135.86.77:5672")
+	const channel = await createConnection("amqp://34.131.18.49:5672")
 
 	await channel.assertQueue("USER_REQUESTS", { durable: true })
 	await channel.assertQueue("YOUTUBER_REQUESTS", { durable: true })

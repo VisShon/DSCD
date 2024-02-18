@@ -16,7 +16,6 @@ let replyQueue = ''
 const createConnection = async (url) => {
 	try{
 		connection = await amqp.connect(url,{})
-		console.log(connection)
 		return channel = await connection.createChannel()
 
 	}catch(e){
@@ -355,7 +354,7 @@ const downloadVideo = async(url, outputPath) =>{
 
 const startTerminalYouTube  = async () =>  {
 
-	const channel = await createConnection("amqp://guest:guest@34.135.86.77:5672")
+	const channel = await createConnection("amqp://34.131.18.49:5672")
 	displayHomePage()
 
 	let service
