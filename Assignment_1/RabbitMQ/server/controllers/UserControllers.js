@@ -48,7 +48,13 @@ const getSubscriptions = async (user) => {
 
 // Function to get all channels
 const getChannels = () => {
-	return Object.values(db.youtubers)
+	
+	let res = Object.keys(db.youtubers).map(yid => ({
+		yid,
+		username: db.youtubers[yid].username
+	}))
+
+	return res
 }
 
 // Function to search videos

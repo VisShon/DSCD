@@ -119,7 +119,7 @@ const consumeUserRequests = async (channel) => {
 						}
 
 						case "getChannels":{
-							const res = getChannels()
+							const res = await getChannels()
 							console.log(res)
 							await response(
 								channel,
@@ -235,7 +235,6 @@ const consumeYouTuberRequests = async (channel) => {
 							const res =  getSubscribers(req.youtuber)
 							
 							console.log(res)
-							
 							await response(
 								channel,
 								message.properties?.replyTo,
