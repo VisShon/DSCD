@@ -1,0 +1,996 @@
+{
+    "py/object": "__main__.Node",
+    "currentTerm": 150,
+    "votedFor": 1,
+    "log": [
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 9
+        },
+        {
+            "op": "SET",
+            "key": "X",
+            "value": "3",
+            "Term": 9
+        },
+        {
+            "op": "SET",
+            "key": "X",
+            "value": "5",
+            "Term": 9
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 10
+        },
+        {
+            "op": "SET",
+            "key": "X",
+            "value": "5",
+            "Term": 10
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 11
+        },
+        {
+            "op": "SET",
+            "key": "X",
+            "value": "3",
+            "Term": 11
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 12
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 14
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 14
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 15
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 16
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 17
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 18
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 19
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 20
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 20
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 21
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 21
+        },
+        {
+            "op": "SET",
+            "key": "X",
+            "value": "4",
+            "Term": 21
+        },
+        {
+            "op": "SET",
+            "key": "X",
+            "value": "4",
+            "Term": 21
+        },
+        {
+            "op": "SET",
+            "key": "X",
+            "value": "4",
+            "Term": 21
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 22
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 22
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 22
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 23
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 23
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 24
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 24
+        },
+        {
+            "op": "SET",
+            "key": "X",
+            "value": "4",
+            "Term": 24
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 24
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 25
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 27
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 28
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 28
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 29
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 29
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 30
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 31
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 32
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 33
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 33
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 34
+        },
+        {
+            "op": "SET",
+            "key": "X",
+            "value": "3",
+            "Term": 34
+        },
+        {
+            "op": "SET",
+            "key": "X",
+            "value": "3",
+            "Term": 34
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 35
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 35
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 36
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 37
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 38
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 39
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 40
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 41
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 42
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 43
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 44
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 44
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 45
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 47
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 47
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 48
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 49
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 50
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 49
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 50
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 50
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 51
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 53
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 53
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 53
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 53
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 54
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 55
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 56
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 57
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 58
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 59
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 60
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 62
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 63
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 64
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 64
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 64
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 79
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 80
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 81
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 81
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 83
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 84
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 85
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 85
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 90
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 91
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 91
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 92
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 93
+        },
+        {
+            "op": "SET",
+            "key": "X",
+            "value": "5",
+            "Term": 93
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 94
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 95
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 96
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 97
+        },
+        {
+            "op": "SET",
+            "key": "X",
+            "value": "5",
+            "Term": 97
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 99
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 100
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 101
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 103
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 104
+        },
+        {
+            "op": "SET",
+            "key": "X",
+            "value": "5",
+            "Term": 104
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 105
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 106
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 111
+        },
+        {
+            "op": "SET",
+            "key": "X",
+            "value": "5",
+            "Term": 111
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 112
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 113
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 114
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 115
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 116
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 117
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 118
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 119
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 120
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 122
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 123
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 123
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 124
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 125
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 126
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 127
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 128
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 128
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 129
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 130
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 131
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 132
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 133
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 134
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 135
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 136
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 137
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 138
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 139
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 140
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 141
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 142
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 142
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 143
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 144
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 145
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 146
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 147
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 148
+        },
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 150
+        }
+    ],
+    "stateMachine": {
+        "": "",
+        "X": "4"
+    },
+    "commitLength": 33,
+    "currentRole": "FOLLOWER",
+    "currentLeader": 1,
+    "votesReceived": {
+        "py/set": [
+            1,
+            4
+        ]
+    },
+    "sentLength": {
+        "1": 150,
+        "2": 128,
+        "3": 150,
+        "4": 0,
+        "5": 150
+    },
+    "ackedLength": {
+        "1": 150,
+        "2": 0,
+        "3": 0,
+        "4": 150,
+        "5": 0
+    },
+    "nodeId": 4,
+    "ip": "localhost",
+    "port": "50003",
+    "nodes": 5,
+    "allNodes": [
+        {
+            "id": 1,
+            "ip": "localhost",
+            "port": "50000"
+        },
+        {
+            "id": 2,
+            "ip": "localhost",
+            "port": "50001"
+        },
+        {
+            "id": 3,
+            "ip": "localhost",
+            "port": "50002"
+        },
+        {
+            "id": 4,
+            "ip": "localhost",
+            "port": "50003"
+        },
+        {
+            "id": 5,
+            "ip": "localhost",
+            "port": "50004"
+        }
+    ],
+    "electionTimeout": 1711836325.3092322,
+    "heartbeatTimeout": 1711836300.8063483,
+    "leaseDuration": 5000,
+    "waitTime": 1711836226.501273,
+    "lease": {
+        "1": 1711836226.501273,
+        "5": 1711835629.9324467,
+        "3": 1711835629.9324467,
+        "2": 1711836226.501273
+    },
+    "heartbeats": {
+        "1": true,
+        "2": false,
+        "3": false,
+        "4": false,
+        "5": false
+    },
+    "myLeaderLease": 1711836226.501273,
+    "LastTerm": 148
+}

@@ -1,0 +1,409 @@
+03:08:52 Node 5 rejected AppendEntries RPC from 2.
+03:08:52 Node 5 accepted AppendEntries RPC from 2.
+03:08:52 Node 5 (follower) committed the entry NO-OP   9 to the state machine.
+03:10:07 Node 5 accepted AppendEntries RPC from 2.
+03:10:08 Node 5 (follower) committed the entry SET X 3 9 to the state machine.
+03:10:16 Node 5 accepted AppendEntries RPC from 2.
+03:10:19 Node 5 (follower) committed the entry SET X 5 9 to the state machine.
+03:10:29 Vote granted for Node 3 in term 10.
+03:10:29 Node 5 rejected AppendEntries RPC from 3.
+03:10:29 Node 5 rejected AppendEntries RPC from 3.
+03:10:30 Node 5 accepted AppendEntries RPC from 3.
+03:10:33 Node 5 (follower) committed the entry NO-OP   10 to the state machine.
+03:10:50 Node 5 accepted AppendEntries RPC from 3.
+03:10:57 Node 5 (follower) committed the entry SET X 5 10 to the state machine.
+03:11:30 Vote granted for Node 4 in term 11.
+03:11:31 Node 5 rejected AppendEntries RPC from 4.
+03:11:31 Node 5 rejected AppendEntries RPC from 4.
+03:11:32 Node 5 accepted AppendEntries RPC from 4.
+03:11:32 Node 5 accepted AppendEntries RPC from 4.
+03:11:34 Node 5 (follower) committed the entry NO-OP   11 to the state machine.
+03:16:00 Vote granted for Node 3 in term 12.
+03:16:00 Node 5 rejected AppendEntries RPC from 3.
+03:16:00 Node 5 rejected AppendEntries RPC from 3.
+03:16:00 Node 5 accepted AppendEntries RPC from 3.
+03:16:03 Node 5 (follower) committed the entry NO-OP   11 to the state machine.
+03:16:03 Node 5 (follower) committed the entry NO-OP   12 to the state machine.
+03:16:09 Node 5 election timer timed out, Starting election.
+03:16:09 Vote granted for Node 5 in term 13.
+03:16:09 Vote granted for Node 3 in term 14.
+03:16:11 Error occurred while sending RPC to Node 2.
+03:16:13 Node 5 rejected AppendEntries RPC from 3.
+03:16:13 Node 5 rejected AppendEntries RPC from 3.
+03:16:14 Node 5 rejected AppendEntries RPC from 3.
+03:16:14 Node 5 rejected AppendEntries RPC from 3.
+03:16:14 Node 5 accepted AppendEntries RPC from 3.
+03:16:21 Node 5 election timer timed out, Starting election.
+03:16:21 Vote granted for Node 5 in term 15.
+03:16:21 Node 5 became the leader for term 15
+03:16:21 Leader waiting for Old Leader Lease to timeout.
+03:16:21 Leader 5 sending heartbeat & Renewing Lease
+03:16:22 Error occurred while sending RPC to Node 4.
+03:16:22 Error occurred while sending RPC to Node 4.
+03:16:22 Node 5 (leader) committed the entry NO-OP   14 to the state machine.
+03:16:22 Node 5 (leader) committed the entry NO-OP   14 to the state machine.
+03:16:22 Node 5 (leader) committed the entry NO-OP   15 to the state machine.
+03:16:23 Error occurred while sending RPC to Node 2.
+03:16:23 Error occurred while sending RPC to Node 2.
+03:16:23 Error occurred while sending RPC to Node 2.
+03:16:29 Leader 5 sending heartbeat & Renewing Lease
+03:16:32 Error occurred while sending RPC to Node 2.
+03:16:36 Leader 5 sending heartbeat & Renewing Lease
+03:16:38 Error occurred while sending RPC to Node 2.
+03:16:42 Vote granted for Node 1 in term 16.
+03:16:42 Node 5 rejected AppendEntries RPC from 1.
+03:16:42 Node 5 rejected AppendEntries RPC from 1.
+03:16:43 Node 5 accepted AppendEntries RPC from 1.
+03:16:46 Node 5 (follower) committed the entry NO-OP   16 to the state machine.
+03:17:03 Vote granted for Node 4 in term 17.
+03:17:03 Node 5 rejected AppendEntries RPC from 4.
+03:17:03 Node 5 rejected AppendEntries RPC from 4.
+03:17:03 Node 5 rejected AppendEntries RPC from 1.
+03:17:03 Node 5 accepted AppendEntries RPC from 4.
+03:17:06 Node 5 (follower) committed the entry NO-OP   17 to the state machine.
+03:17:12 Vote granted for Node 1 in term 18.
+03:17:12 Node 5 rejected AppendEntries RPC from 1.
+03:17:12 Node 5 rejected AppendEntries RPC from 1.
+03:17:13 Node 5 accepted AppendEntries RPC from 1.
+03:17:16 Node 5 (follower) committed the entry NO-OP   18 to the state machine.
+03:17:21 Vote granted for Node 3 in term 19.
+03:17:22 Node 5 rejected AppendEntries RPC from 3.
+03:17:22 Node 5 rejected AppendEntries RPC from 3.
+03:17:22 Node 5 accepted AppendEntries RPC from 3.
+03:17:25 Node 5 (follower) committed the entry NO-OP   19 to the state machine.
+03:17:32 Node 5 election timer timed out, Starting election.
+03:17:32 Vote granted for Node 5 in term 20.
+03:17:32 Node 5 became the leader for term 20
+03:17:32 Node 5 became the leader for term 20
+03:17:32 Leader waiting for Old Leader Lease to timeout.
+03:17:32 Leader waiting for Old Leader Lease to timeout.
+03:17:35 Error occurred while sending RPC to Node 2.
+03:17:37 Leader 5 sending heartbeat & Renewing Lease
+03:17:39 Error occurred while sending RPC to Node 2.
+03:17:40 Error occurred while sending RPC to Node 2.
+03:17:40 Error occurred while sending RPC to Node 2.
+03:17:44 Vote granted for Node 4 in term 21.
+03:17:47 Node 5 rejected AppendEntries RPC from 4.
+03:17:48 Node 5 rejected AppendEntries RPC from 4.
+03:17:48 Node 5 rejected AppendEntries RPC from 4.
+03:17:49 Node 5 rejected AppendEntries RPC from 4.
+03:17:50 Node 5 rejected AppendEntries RPC from 4.
+03:17:52 Vote granted for Node 3 in term 22.
+03:17:52 Node 5 rejected AppendEntries RPC from 4.
+03:17:53 Node 5 rejected AppendEntries RPC from 4.
+03:17:53 Node 5 rejected AppendEntries RPC from 4.
+03:17:53 Node 5 rejected AppendEntries RPC from 3.
+03:17:53 Node 5 rejected AppendEntries RPC from 4.
+03:17:55 Node 5 rejected AppendEntries RPC from 3.
+03:17:56 Node 5 rejected AppendEntries RPC from 3.
+03:17:58 Node 5 rejected AppendEntries RPC from 3.
+03:17:59 Node 5 rejected AppendEntries RPC from 3.
+03:17:59 Node 5 rejected AppendEntries RPC from 3.
+03:18:00 Vote granted for Node 1 in term 23.
+03:18:00 Node 5 rejected AppendEntries RPC from 3.
+03:18:01 Node 5 rejected AppendEntries RPC from 3.
+03:18:01 Node 5 rejected AppendEntries RPC from 1.
+03:18:01 Node 5 rejected AppendEntries RPC from 1.
+03:18:02 Node 5 rejected AppendEntries RPC from 1.
+03:18:02 Node 5 rejected AppendEntries RPC from 1.
+03:18:02 Node 5 rejected AppendEntries RPC from 1.
+03:18:03 Node 5 rejected AppendEntries RPC from 1.
+03:18:03 Node 5 rejected AppendEntries RPC from 1.
+03:18:03 Node 5 rejected AppendEntries RPC from 1.
+03:18:03 Node 5 rejected AppendEntries RPC from 1.
+03:18:04 Node 5 accepted AppendEntries RPC from 1.
+03:18:08 Vote granted for Node 4 in term 24.
+03:18:10 Node 5 rejected AppendEntries RPC from 4.
+03:18:10 Node 5 rejected AppendEntries RPC from 4.
+03:18:10 Node 5 rejected AppendEntries RPC from 4.
+03:18:10 Node 5 rejected AppendEntries RPC from 4.
+03:18:11 Node 5 rejected AppendEntries RPC from 4.
+03:18:11 Node 5 rejected AppendEntries RPC from 4.
+03:18:11 Node 5 rejected AppendEntries RPC from 4.
+03:18:12 Node 5 accepted AppendEntries RPC from 4.
+03:18:15 Node 5 accepted AppendEntries RPC from 4.
+03:18:22 Vote granted for Node 3 in term 25.
+03:18:22 Node 5 rejected AppendEntries RPC from 3.
+03:18:22 Node 5 rejected AppendEntries RPC from 3.
+03:18:22 Node 5 rejected AppendEntries RPC from 3.
+03:18:23 Node 5 accepted AppendEntries RPC from 3.
+03:18:32 Node 5 election timer timed out, Starting election.
+03:18:32 Vote granted for Node 5 in term 26.
+03:18:32 Vote granted for Node 3 in term 27.
+03:18:32 Node 5 rejected AppendEntries RPC from 3.
+03:18:32 Node 5 rejected AppendEntries RPC from 3.
+03:18:32 Node 5 accepted AppendEntries RPC from 3.
+03:18:34 Error occurred while sending RPC to Node 2.
+03:18:39 Node 5 election timer timed out, Starting election.
+03:18:39 Vote granted for Node 5 in term 28.
+03:18:40 Node 5 became the leader for term 28
+03:18:40 Node 5 became the leader for term 28
+03:18:40 Leader waiting for Old Leader Lease to timeout.
+03:18:40 Leader waiting for Old Leader Lease to timeout.
+03:18:40 Leader 5 sending heartbeat & Renewing Lease
+03:18:41 Error occurred while sending RPC to Node 1.
+03:18:41 Error occurred while sending RPC to Node 1.
+03:18:41 Error occurred while sending RPC to Node 1.
+03:18:42 Error occurred while sending RPC to Node 2.
+03:18:42 Error occurred while sending RPC to Node 2.
+03:18:42 Error occurred while sending RPC to Node 2.
+03:18:42 Error occurred while sending RPC to Node 2.
+03:18:46 Node 5 (leader) committed the entry NO-OP   20 to the state machine.
+03:18:47 Node 5 (leader) committed the entry NO-OP   20 to the state machine.
+03:18:47 Node 5 (leader) committed the entry NO-OP   21 to the state machine.
+03:18:48 5 Stepping down
+03:18:48 Node 5 (leader) committed the entry NO-OP   21 to the state machine.
+03:18:48 Vote granted for Node 3 in term 29.
+03:18:48 Node 5 (leader) committed the entry SET X 4 21 to the state machine.
+03:18:48 Node 5 (leader) committed the entry SET X 4 21 to the state machine.
+03:18:49 Node 5 (leader) committed the entry SET X 4 21 to the state machine.
+03:18:49 Node 5 (leader) committed the entry NO-OP   22 to the state machine.
+03:18:49 Node 5 (leader) committed the entry NO-OP   22 to the state machine.
+03:18:49 Node 5 (leader) committed the entry NO-OP   22 to the state machine.
+03:18:49 Node 5 rejected AppendEntries RPC from 3.
+03:18:49 Node 5 rejected AppendEntries RPC from 3.
+03:18:49 Node 5 (leader) committed the entry NO-OP   23 to the state machine.
+03:18:50 Node 5 (leader) committed the entry NO-OP   23 to the state machine.
+03:18:50 Node 5 (leader) committed the entry NO-OP   24 to the state machine.
+03:18:50 Node 5 (leader) committed the entry NO-OP   24 to the state machine.
+03:18:50 Node 5 (leader) committed the entry SET X 4 24 to the state machine.
+03:18:51 Node 5 (leader) committed the entry NO-OP   24 to the state machine.
+03:18:51 Node 5 (leader) committed the entry NO-OP   25 to the state machine.
+03:18:51 Node 5 (leader) committed the entry NO-OP   27 to the state machine.
+03:18:51 Node 5 accepted AppendEntries RPC from 3.
+03:18:51 Node 5 accepted AppendEntries RPC from 3.
+03:18:51 Node 5 (follower) committed the entry NO-OP   20 to the state machine.
+03:18:51 Node 5 (follower) committed the entry NO-OP   20 to the state machine.
+03:18:51 Node 5 (follower) committed the entry NO-OP   21 to the state machine.
+03:18:51 Node 5 (follower) committed the entry NO-OP   21 to the state machine.
+03:18:51 Node 5 (follower) committed the entry SET X 4 21 to the state machine.
+03:18:51 Node 5 (follower) committed the entry SET X 4 21 to the state machine.
+03:18:51 Node 5 (follower) committed the entry SET X 4 21 to the state machine.
+03:18:51 Node 5 (follower) committed the entry NO-OP   22 to the state machine.
+03:18:51 Node 5 (follower) committed the entry NO-OP   22 to the state machine.
+03:18:51 Node 5 (follower) committed the entry NO-OP   22 to the state machine.
+03:18:51 Node 5 (follower) committed the entry NO-OP   23 to the state machine.
+03:18:51 Node 5 (follower) committed the entry NO-OP   23 to the state machine.
+03:18:51 Node 5 (follower) committed the entry NO-OP   24 to the state machine.
+03:18:51 Node 5 (follower) committed the entry NO-OP   24 to the state machine.
+03:18:51 Node 5 (follower) committed the entry SET X 4 24 to the state machine.
+03:18:51 Node 5 (follower) committed the entry NO-OP   24 to the state machine.
+03:18:51 Node 5 (follower) committed the entry NO-OP   25 to the state machine.
+03:18:51 Node 5 (follower) committed the entry NO-OP   27 to the state machine.
+03:18:51 Node 5 (follower) committed the entry NO-OP   20 to the state machine.
+03:18:51 Node 5 (follower) committed the entry NO-OP   20 to the state machine.
+03:18:51 Node 5 (follower) committed the entry NO-OP   21 to the state machine.
+03:18:51 Node 5 (follower) committed the entry NO-OP   21 to the state machine.
+03:18:51 Node 5 (follower) committed the entry SET X 4 21 to the state machine.
+03:18:51 Node 5 (leader) committed the entry NO-OP   28 to the state machine.
+03:18:51 Node 5 (follower) committed the entry SET X 4 21 to the state machine.
+03:18:51 Node 5 (follower) committed the entry SET X 4 21 to the state machine.
+03:18:51 Node 5 (follower) committed the entry NO-OP   22 to the state machine.
+03:18:51 Node 5 (follower) committed the entry NO-OP   22 to the state machine.
+03:18:51 Node 5 (follower) committed the entry NO-OP   22 to the state machine.
+03:18:51 Node 5 (follower) committed the entry NO-OP   23 to the state machine.
+03:18:51 Node 5 (follower) committed the entry NO-OP   23 to the state machine.
+03:18:51 Node 5 (follower) committed the entry NO-OP   24 to the state machine.
+03:18:51 Node 5 (follower) committed the entry NO-OP   24 to the state machine.
+03:18:51 Node 5 (follower) committed the entry SET X 4 24 to the state machine.
+03:18:51 Node 5 (follower) committed the entry NO-OP   24 to the state machine.
+03:18:52 Node 5 (follower) committed the entry NO-OP   25 to the state machine.
+03:18:52 Node 5 (leader) committed the entry NO-OP   28 to the state machine.
+03:18:52 Node 5 (follower) committed the entry NO-OP   27 to the state machine.
+03:18:55 Node 5 election timer timed out, Starting election.
+03:18:55 Vote granted for Node 5 in term 30.
+03:18:56 Node 5 became the leader for term 30
+03:18:56 Leader waiting for Old Leader Lease to timeout.
+03:18:56 Leader 5 sending heartbeat & Renewing Lease
+03:18:57 Error occurred while sending RPC to Node 1.
+03:18:57 Error occurred while sending RPC to Node 1.
+03:18:58 Error occurred while sending RPC to Node 2.
+03:18:58 Error occurred while sending RPC to Node 2.
+03:18:58 Error occurred while sending RPC to Node 2.
+03:19:05 Vote granted for Node 1 in term 31.
+03:19:06 Node 5 rejected AppendEntries RPC from 1.
+03:19:07 Node 5 rejected AppendEntries RPC from 1.
+03:19:08 Node 5 accepted AppendEntries RPC from 1.
+03:19:16 Vote granted for Node 4 in term 32.
+03:19:18 Node 5 rejected AppendEntries RPC from 4.
+03:19:18 Node 5 rejected AppendEntries RPC from 4.
+03:19:20 Node 5 accepted AppendEntries RPC from 4.
+03:19:26 Vote granted for Node 3 in term 33.
+03:19:31 Node 5 rejected AppendEntries RPC from 3.
+03:19:31 Node 5 rejected AppendEntries RPC from 3.
+03:19:31 Node 5 rejected AppendEntries RPC from 3.
+03:19:31 Node 5 rejected AppendEntries RPC from 3.
+03:19:32 Node 5 accepted AppendEntries RPC from 3.
+03:19:41 Node 5 election timer timed out, Starting election.
+03:19:41 Vote granted for Node 5 in term 34.
+03:19:41 Node 5 became the leader for term 34
+03:19:41 Leader waiting for Old Leader Lease to timeout.
+03:19:41 Leader 5 sending heartbeat & Renewing Lease
+03:19:42 Node 5 (leader) received an SET X 3 request.
+03:19:43 Error occurred while sending RPC to Node 2.
+03:19:43 Error occurred while sending RPC to Node 2.
+03:19:43 Error occurred while sending RPC to Node 2.
+03:19:43 Error occurred while sending RPC to Node 2.
+03:19:50 Vote granted for Node 4 in term 35.
+03:19:53 Node 5 rejected AppendEntries RPC from 4.
+03:19:53 Node 5 rejected AppendEntries RPC from 4.
+03:19:54 Node 5 rejected AppendEntries RPC from 4.
+03:19:55 Node 5 rejected AppendEntries RPC from 4.
+03:19:57 Node 5 accepted AppendEntries RPC from 4.
+03:19:58 Node 5 rejected AppendEntries RPC from 4.
+03:20:01 Vote granted for Node 1 in term 36.
+03:20:04 Node 5 rejected AppendEntries RPC from 1.
+03:20:05 Node 5 rejected AppendEntries RPC from 1.
+03:20:07 Node 5 accepted AppendEntries RPC from 1.
+03:20:12 Vote granted for Node 3 in term 37.
+03:20:15 Node 5 rejected AppendEntries RPC from 3.
+03:20:16 Node 5 rejected AppendEntries RPC from 3.
+03:20:19 Node 5 accepted AppendEntries RPC from 3.
+03:20:24 Vote granted for Node 1 in term 38.
+03:20:26 Node 5 rejected AppendEntries RPC from 1.
+03:20:27 Node 5 rejected AppendEntries RPC from 1.
+03:20:29 Node 5 accepted AppendEntries RPC from 1.
+03:20:32 Vote granted for Node 3 in term 39.
+03:20:33 Node 5 rejected AppendEntries RPC from 3.
+03:20:34 Node 5 rejected AppendEntries RPC from 3.
+03:20:36 Node 5 accepted AppendEntries RPC from 3.
+03:20:40 Node 5 election timer timed out, Starting election.
+03:20:40 Vote granted for Node 5 in term 40.
+03:20:40 Node 5 became the leader for term 40
+03:20:40 Leader waiting for Old Leader Lease to timeout.
+03:20:40 Leader 5 sending heartbeat & Renewing Lease
+03:20:42 Error occurred while sending RPC to Node 2.
+03:20:42 Error occurred while sending RPC to Node 2.
+03:20:42 Error occurred while sending RPC to Node 2.
+03:20:48 Vote granted for Node 4 in term 41.
+03:20:49 Node 5 rejected AppendEntries RPC from 4.
+03:20:51 Node 5 rejected AppendEntries RPC from 4.
+03:20:51 Node 5 accepted AppendEntries RPC from 4.
+03:20:59 Vote granted for Node 3 in term 42.
+03:21:02 Node 5 rejected AppendEntries RPC from 3.
+03:21:02 Node 5 rejected AppendEntries RPC from 3.
+03:21:03 Node 5 accepted AppendEntries RPC from 3.
+03:21:09 Vote granted for Node 4 in term 43.
+03:21:10 Node 5 rejected AppendEntries RPC from 4.
+03:21:11 Node 5 rejected AppendEntries RPC from 4.
+03:21:12 Node 5 accepted AppendEntries RPC from 4.
+03:21:15 Vote granted for Node 1 in term 44.
+03:21:16 Node 5 rejected AppendEntries RPC from 1.
+03:21:17 Node 5 rejected AppendEntries RPC from 1.
+03:21:18 Node 5 accepted AppendEntries RPC from 1.
+03:21:18 Node 5 accepted AppendEntries RPC from 1.
+03:21:26 Node 5 election timer timed out, Starting election.
+03:21:26 Vote granted for Node 5 in term 45.
+03:21:26 Node 5 became the leader for term 45
+03:21:26 Leader waiting for Old Leader Lease to timeout.
+03:21:26 Leader 5 sending heartbeat & Renewing Lease
+03:21:28 Error occurred while sending RPC to Node 2.
+03:21:28 Error occurred while sending RPC to Node 2.
+03:21:28 Error occurred while sending RPC to Node 2.
+03:21:36 Vote granted for Node 4 in term 46.
+03:21:36 Node 5 election timer timed out, Starting election.
+03:21:36 Vote granted for Node 5 in term 47.
+03:21:36 Node 5 became the leader for term 47
+03:21:36 Leader waiting for Old Leader Lease to timeout.
+03:21:36 Node 5 became the leader for term 47
+03:21:36 Leader waiting for Old Leader Lease to timeout.
+03:21:38 Error occurred while sending RPC to Node 2.
+03:21:40 Leader 5 sending heartbeat & Renewing Lease
+03:21:42 Error occurred while sending RPC to Node 2.
+03:21:42 Error occurred while sending RPC to Node 2.
+03:21:43 Error occurred while sending RPC to Node 2.
+03:21:48 Vote granted for Node 4 in term 48.
+03:21:50 Node 5 rejected AppendEntries RPC from 4.
+03:21:51 Node 5 rejected AppendEntries RPC from 4.
+03:21:52 Node 5 accepted AppendEntries RPC from 4.
+03:21:55 Vote granted for Node 3 in term 49.
+03:22:02 Node 5 rejected AppendEntries RPC from 3.
+03:22:03 Node 5 rejected AppendEntries RPC from 3.
+03:22:04 Node 5 rejected AppendEntries RPC from 3.
+03:22:04 Node 5 rejected AppendEntries RPC from 3.
+03:22:06 Node 5 accepted AppendEntries RPC from 3.
+03:22:06 Vote granted for Node 1 in term 50.
+03:22:06 Node 5 rejected AppendEntries RPC from 3.
+03:22:09 Node 5 rejected AppendEntries RPC from 1.
+03:22:09 Node 5 rejected AppendEntries RPC from 3.
+03:22:09 Node 5 rejected AppendEntries RPC from 1.
+03:22:12 Node 5 accepted AppendEntries RPC from 1.
+03:22:14 Vote granted for Node 4 in term 51.
+03:22:16 Node 5 rejected AppendEntries RPC from 4.
+03:22:16 Node 5 rejected AppendEntries RPC from 4.
+03:22:18 Node 5 rejected AppendEntries RPC from 4.
+03:22:20 Node 5 rejected AppendEntries RPC from 4.
+03:22:20 Node 5 rejected AppendEntries RPC from 4.
+03:22:24 Node 5 rejected AppendEntries RPC from 4.
+03:22:26 Node 5 accepted AppendEntries RPC from 4.
+03:22:28 Vote granted for Node 1 in term 52.
+03:22:29 Vote granted for Node 4 in term 53.
+03:22:35 Node 5 rejected AppendEntries RPC from 4.
+03:22:36 Node 5 rejected AppendEntries RPC from 4.
+03:22:36 Node 5 rejected AppendEntries RPC from 4.
+03:22:39 Node 5 accepted AppendEntries RPC from 4.
+03:22:39 Node 5 rejected AppendEntries RPC from 4.
+03:22:44 Vote granted for Node 3 in term 54.
+03:22:45 Node 5 rejected AppendEntries RPC from 3.
+03:22:45 Node 5 rejected AppendEntries RPC from 3.
+03:22:46 Node 5 rejected AppendEntries RPC from 3.
+03:22:46 Node 5 rejected AppendEntries RPC from 3.
+03:22:47 Node 5 accepted AppendEntries RPC from 3.
+03:22:51 Vote granted for Node 1 in term 55.
+03:22:52 Node 5 rejected AppendEntries RPC from 1.
+03:22:52 Node 5 rejected AppendEntries RPC from 1.
+03:22:53 Node 5 accepted AppendEntries RPC from 1.
+03:22:59 Vote granted for Node 3 in term 56.
+03:23:00 Node 5 rejected AppendEntries RPC from 3.
+03:23:00 Node 5 rejected AppendEntries RPC from 3.
+03:23:00 Node 5 accepted AppendEntries RPC from 3.
+03:23:07 Node 5 election timer timed out, Starting election.
+03:23:07 Vote granted for Node 5 in term 57.
+03:23:07 Node 5 became the leader for term 57
+03:23:07 Leader waiting for Old Leader Lease to timeout.
+03:23:07 Leader 5 sending heartbeat & Renewing Lease
+03:23:09 Error occurred while sending RPC to Node 2.
+03:23:09 Error occurred while sending RPC to Node 2.
+03:23:09 Error occurred while sending RPC to Node 2.
+03:23:17 Vote granted for Node 1 in term 58.
+03:23:20 Node 5 rejected AppendEntries RPC from 1.
+03:23:20 Node 5 rejected AppendEntries RPC from 1.
+03:23:23 Node 5 accepted AppendEntries RPC from 1.
+03:23:23 Node 5 accepted AppendEntries RPC from 1.
+03:23:26 Vote denied for Node 3 in term 59.
+03:23:28 Node 5 rejected AppendEntries RPC from 3.
+03:23:29 Node 5 rejected AppendEntries RPC from 3.
+03:23:31 Node 5 accepted AppendEntries RPC from 3.
+03:23:35 Node 5 election timer timed out, Starting election.
+03:23:35 Vote granted for Node 5 in term 60.
+03:23:35 Node 5 became the leader for term 60
+03:23:35 Leader waiting for Old Leader Lease to timeout.
+03:23:35 Leader 5 sending heartbeat & Renewing Lease
+03:23:37 Error occurred while sending RPC to Node 2.
+03:23:37 Error occurred while sending RPC to Node 2.
+03:23:44 Vote granted for Node 3 in term 61.
+03:23:44 Node 5 election timer timed out, Starting election.
+03:23:44 Vote granted for Node 5 in term 62.
+03:23:44 Node 5 became the leader for term 62
+03:23:44 Leader waiting for Old Leader Lease to timeout.
+03:23:44 Leader 5 sending heartbeat & Renewing Lease
+03:23:45 Error occurred while sending RPC to Node 3.
+03:23:45 Error occurred while sending RPC to Node 3.
+03:23:47 Error occurred while sending RPC to Node 2.
+03:23:47 Error occurred while sending RPC to Node 2.
+03:23:47 Error occurred while sending RPC to Node 2.
+03:23:52 Vote granted for Node 3 in term 63.
+03:23:53 Node 5 rejected AppendEntries RPC from 3.
+03:23:54 Node 5 rejected AppendEntries RPC from 3.
+03:23:55 Node 5 accepted AppendEntries RPC from 3.
+03:24:00 Vote granted for Node 4 in term 64.
+03:24:02 Node 5 rejected AppendEntries RPC from 4.
+03:24:02 Node 5 rejected AppendEntries RPC from 4.
+03:24:02 Node 5 rejected AppendEntries RPC from 4.
+03:24:03 Node 5 rejected AppendEntries RPC from 4.
+03:24:05 Node 5 accepted AppendEntries RPC from 4.
+03:24:09 Node 5 election timer timed out, Starting election.
+03:24:09 Vote granted for Node 5 in term 65.
+03:24:11 Error occurred while sending RPC to Node 2.
+03:24:15 Node 5 election timer timed out, Starting election.
+03:24:15 Vote granted for Node 5 in term 66.
