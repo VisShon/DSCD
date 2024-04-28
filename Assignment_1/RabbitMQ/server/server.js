@@ -184,7 +184,6 @@ const consumeYouTuberRequests = async (channel) => {
 											req.username,
 											req.password,
 										)
-<<<<<<< Updated upstream
 							
 							console.log(res)
 							
@@ -194,9 +193,6 @@ const consumeYouTuberRequests = async (channel) => {
 								message.properties?.correlationId,
 								res
 							)
-=======
-							console.log(res)	
->>>>>>> Stashed changes
 							break
 						}
 
