@@ -1,0 +1,131 @@
+
+Iteration 1
+Initial Centroids:
+Initial Centroid 1 : x = -1.7999999523162842, y = 7.599999904632568
+Initial Centroid 2 : x = 0.8999999761581421, y = 9.600000381469727
+grpc call Map from Mapper 1
+grpc call Map from Mapper 2
+grpc call Map from Mapper 3
+grpc call Map from Mapper 4
+grpc call Map from Mapper 5
+grpc call Map from Mapper 1 returned FAILURE
+grpc call Map from Mapper 3 returned FAILURE
+grpc call Map from Mapper 4 returned FAILURE
+grpc call Map from Mapper 5 returned FAILURE
+grpc call Map from Mapper 2 returned SUCCESS
+grpc call Map from Mapper 1
+grpc call Map from Mapper 5
+grpc call Map from Mapper 3
+grpc call Map from Mapper 4
+grpc call Map from Mapper 1 returned FAILURE
+grpc call Map from Mapper 5 returned SUCCESS
+grpc call Map from Mapper 3 returned SUCCESS
+grpc call Map from Mapper 4 returned SUCCESS
+grpc call Map from Mapper 1
+grpc call Map from Mapper 1 returned FAILURE
+grpc call Map from Mapper 1
+grpc call Map from Mapper 1 returned FAILURE
+grpc call Map from Mapper 1
+grpc call Map from Mapper 1 returned SUCCESS
+grpc call Reduce from Reducer 1
+grpc call Reduce from Reducer 2
+grpc call Reduce from Reducer 3
+grpc call Reduce from Reducer 4
+grpc call Reduce from Reducer 5
+grpc call Reduce from Reducer 1 returned FAILURE
+grpc call Reduce from Reducer 2 returned FAILURE
+grpc call Reduce from Reducer 3 returned SUCCESS
+New Centroids from Reducer 3:
+grpc call Reduce from Reducer 5 returned SUCCESS
+New Centroids from Reducer 5:
+grpc call Reduce from Reducer 4 returned SUCCESS
+New Centroids from Reducer 4:
+grpc call Reduce from Reducer 1
+grpc call Reduce from Reducer 2
+grpc call Reduce from Reducer 1 returned FAILURE
+grpc call Reduce from Reducer 2 returned SUCCESS
+New Centroids from Reducer 2:
+Centroid 1 : x = 7.7166666984558105, y = 2.762500047683716
+grpc call Reduce from Reducer 1
+grpc call Reduce from Reducer 1 returned SUCCESS
+New Centroids from Reducer 1:
+Centroid 0 : x = -0.8428571224212646, y = 7.328571319580078
+
+Iteration 2
+grpc call Map from Mapper 1
+grpc call Map from Mapper 3
+grpc call Map from Mapper 2
+grpc call Map from Mapper 4
+grpc call Map from Mapper 5
+grpc call Map from Mapper 4 returned SUCCESS
+grpc call Map from Mapper 3 returned SUCCESS
+grpc call Map from Mapper 5 returned SUCCESS
+grpc call Map from Mapper 1 returned SUCCESS
+grpc call Map from Mapper 2 returned SUCCESS
+grpc call Reduce from Reducer 1
+grpc call Reduce from Reducer 2
+grpc call Reduce from Reducer 3
+grpc call Reduce from Reducer 4
+grpc call Reduce from Reducer 5
+grpc call Reduce from Reducer 1 returned FAILURE
+grpc call Reduce from Reducer 2 returned SUCCESS
+New Centroids from Reducer 2:
+Centroid 1 : x = 9.547368049621582, y = 1.0473684072494507
+grpc call Reduce from Reducer 5 returned SUCCESS
+New Centroids from Reducer 5:
+grpc call Reduce from Reducer 3 returned SUCCESS
+New Centroids from Reducer 3:
+grpc call Reduce from Reducer 4 returned SUCCESS
+New Centroids from Reducer 4:
+grpc call Reduce from Reducer 1
+grpc call Reduce from Reducer 1 returned FAILURE
+grpc call Reduce from Reducer 1
+grpc call Reduce from Reducer 1 returned FAILURE
+grpc call Reduce from Reducer 1
+grpc call Reduce from Reducer 1 returned SUCCESS
+New Centroids from Reducer 1:
+Centroid 0 : x = -0.17500001192092896, y = 8.141666412353516
+
+Iteration 3
+grpc call Map from Mapper 1
+grpc call Map from Mapper 2
+grpc call Map from Mapper 3
+grpc call Map from Mapper 4
+grpc call Map from Mapper 5
+grpc call Map from Mapper 3 returned FAILURE
+grpc call Map from Mapper 5 returned FAILURE
+grpc call Map from Mapper 1 returned SUCCESS
+grpc call Map from Mapper 2 returned SUCCESS
+grpc call Map from Mapper 4 returned SUCCESS
+grpc call Map from Mapper 3
+grpc call Map from Mapper 5
+grpc call Map from Mapper 3 returned FAILURE
+grpc call Map from Mapper 5 returned SUCCESS
+grpc call Map from Mapper 3
+grpc call Map from Mapper 3 returned SUCCESS
+grpc call Reduce from Reducer 1
+grpc call Reduce from Reducer 3
+grpc call Reduce from Reducer 4
+grpc call Reduce from Reducer 5
+grpc call Reduce from Reducer 2
+grpc call Reduce from Reducer 4 returned FAILURE
+grpc call Reduce from Reducer 2 returned SUCCESS
+New Centroids from Reducer 2:
+Centroid 1 : x = 9.547368049621582, y = 1.0473684072494507
+grpc call Reduce from Reducer 3 returned SUCCESS
+New Centroids from Reducer 3:
+grpc call Reduce from Reducer 5 returned SUCCESS
+New Centroids from Reducer 5:
+grpc call Reduce from Reducer 1 returned SUCCESS
+New Centroids from Reducer 1:
+Centroid 0 : x = -0.17500001192092896, y = 8.141666412353516
+grpc call Reduce from Reducer 4
+grpc call Reduce from Reducer 4 returned FAILURE
+grpc call Reduce from Reducer 4
+grpc call Reduce from Reducer 4 returned FAILURE
+grpc call Reduce from Reducer 4
+grpc call Reduce from Reducer 4 returned SUCCESS
+New Centroids from Reducer 4:
+Converged at iteration: 3
+Final Centroid 1 : x = -0.17500001192092896, y = 8.141666412353516
+Final Centroid 2 : x = 9.547368049621582, y = 1.0473684072494507

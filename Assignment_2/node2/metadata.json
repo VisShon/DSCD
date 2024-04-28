@@ -1,0 +1,99 @@
+{
+    "py/object": "__main__.Node",
+    "currentTerm": 150,
+    "votedFor": 1,
+    "log": [
+        {
+            "op": "NO-OP",
+            "key": "",
+            "value": "",
+            "Term": 9
+        },
+        {
+            "op": "SET",
+            "key": "X",
+            "value": "3",
+            "Term": 9
+        },
+        {
+            "op": "SET",
+            "key": "X",
+            "value": "5",
+            "Term": 9
+        }
+    ],
+    "stateMachine": {
+        "": "",
+        "X": "5"
+    },
+    "commitLength": 3,
+    "currentRole": "FOLLOWER",
+    "currentLeader": 1,
+    "votesReceived": {
+        "py/set": [
+            2
+        ]
+    },
+    "sentLength": {
+        "1": 3,
+        "2": 0,
+        "3": 3,
+        "4": 3,
+        "5": 3
+    },
+    "ackedLength": {
+        "1": 3,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 3
+    },
+    "nodeId": 2,
+    "ip": "localhost",
+    "port": "50001",
+    "nodes": 5,
+    "allNodes": [
+        {
+            "id": 1,
+            "ip": "localhost",
+            "port": "50000"
+        },
+        {
+            "id": 2,
+            "ip": "localhost",
+            "port": "50001"
+        },
+        {
+            "id": 3,
+            "ip": "localhost",
+            "port": "50002"
+        },
+        {
+            "id": 4,
+            "ip": "localhost",
+            "port": "50003"
+        },
+        {
+            "id": 5,
+            "ip": "localhost",
+            "port": "50004"
+        }
+    ],
+    "electionTimeout": 1711836325.0803192,
+    "heartbeatTimeout": 1711835728.3645372,
+    "leaseDuration": 5000,
+    "waitTime": 0,
+    "lease": {
+        "1": 1711835941.1772327,
+        "4": 1711835988.0182538
+    },
+    "heartbeats": {
+        "1": false,
+        "2": false,
+        "3": false,
+        "4": false,
+        "5": false
+    },
+    "myLeaderLease": 1711836226.501273,
+    "LastTerm": 9
+}

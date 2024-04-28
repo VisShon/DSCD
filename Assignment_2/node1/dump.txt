@@ -1,0 +1,1063 @@
+03:07:30 Node 1 election timer timed out, Starting election.
+03:07:30 Vote granted for Node 1 in term 0.
+03:07:33 Error occurred while sending RPC to Node 4.
+03:07:33 Error occurred while sending RPC to Node 5.
+03:07:33 Error occurred while sending RPC to Node 2.
+03:07:33 Error occurred while sending RPC to Node 3.
+03:07:40 Node 1 election timer timed out, Starting election.
+03:07:40 Vote granted for Node 1 in term 1.
+03:07:42 Error occurred while sending RPC to Node 3.
+03:07:42 Error occurred while sending RPC to Node 2.
+03:07:42 Error occurred while sending RPC to Node 4.
+03:07:42 Error occurred while sending RPC to Node 5.
+03:07:48 Node 1 election timer timed out, Starting election.
+03:07:48 Vote granted for Node 1 in term 2.
+03:07:50 Error occurred while sending RPC to Node 2.
+03:07:50 Error occurred while sending RPC to Node 5.
+03:07:50 Error occurred while sending RPC to Node 4.
+03:07:50 Error occurred while sending RPC to Node 3.
+03:07:54 Node 1 election timer timed out, Starting election.
+03:07:54 Vote granted for Node 1 in term 3.
+03:07:57 Error occurred while sending RPC to Node 3.
+03:07:57 Error occurred while sending RPC to Node 2.
+03:07:57 Error occurred while sending RPC to Node 5.
+03:07:57 Error occurred while sending RPC to Node 4.
+03:08:01 Node 1 election timer timed out, Starting election.
+03:08:01 Vote granted for Node 1 in term 4.
+03:08:03 Error occurred while sending RPC to Node 2.
+03:08:03 Error occurred while sending RPC to Node 3.
+03:08:03 Error occurred while sending RPC to Node 5.
+03:08:03 Error occurred while sending RPC to Node 4.
+03:08:11 Node 1 election timer timed out, Starting election.
+03:08:11 Vote granted for Node 1 in term 5.
+03:08:13 Error occurred while sending RPC to Node 2.
+03:08:13 Error occurred while sending RPC to Node 3.
+03:08:13 Error occurred while sending RPC to Node 4.
+03:08:13 Error occurred while sending RPC to Node 5.
+03:08:19 Node 1 election timer timed out, Starting election.
+03:08:19 Vote granted for Node 1 in term 6.
+03:08:22 Error occurred while sending RPC to Node 3.
+03:08:22 Error occurred while sending RPC to Node 5.
+03:08:22 Error occurred while sending RPC to Node 4.
+03:08:22 Error occurred while sending RPC to Node 2.
+03:08:26 Node 1 election timer timed out, Starting election.
+03:08:26 Vote granted for Node 1 in term 7.
+03:08:29 Error occurred while sending RPC to Node 2.
+03:08:29 Error occurred while sending RPC to Node 5.
+03:08:29 Error occurred while sending RPC to Node 3.
+03:08:29 Error occurred while sending RPC to Node 4.
+03:08:36 Node 1 election timer timed out, Starting election.
+03:08:36 Vote granted for Node 1 in term 8.
+03:08:38 Error occurred while sending RPC to Node 5.
+03:08:38 Error occurred while sending RPC to Node 3.
+03:08:38 Error occurred while sending RPC to Node 4.
+03:08:42 Vote granted for Node 2 in term 9.
+03:08:43 Node 1 rejected AppendEntries RPC from 2.
+03:08:43 Node 1 rejected AppendEntries RPC from 2.
+03:08:44 Node 1 accepted AppendEntries RPC from 2.
+03:08:45 Node 1 (follower) committed the entry NO-OP   9 to the state machine.
+03:10:07 Node 1 accepted AppendEntries RPC from 2.
+03:10:08 Node 1 (follower) committed the entry SET X 3 9 to the state machine.
+03:10:16 Node 1 accepted AppendEntries RPC from 2.
+03:10:18 Node 1 (follower) committed the entry SET X 5 9 to the state machine.
+03:10:29 Vote granted for Node 3 in term 10.
+03:10:29 Node 1 rejected AppendEntries RPC from 3.
+03:10:29 Node 1 rejected AppendEntries RPC from 3.
+03:10:30 Node 1 accepted AppendEntries RPC from 3.
+03:10:32 Node 1 (follower) committed the entry NO-OP   10 to the state machine.
+03:10:50 Node 1 accepted AppendEntries RPC from 3.
+03:10:57 Node 1 (follower) committed the entry SET X 5 10 to the state machine.
+03:11:30 Vote granted for Node 4 in term 11.
+03:11:31 Node 1 rejected AppendEntries RPC from 4.
+03:11:31 Node 1 rejected AppendEntries RPC from 4.
+03:11:32 Node 1 accepted AppendEntries RPC from 4.
+03:11:34 Node 1 (follower) committed the entry NO-OP   11 to the state machine.
+03:15:54 Node 1 accepted AppendEntries RPC from 4.
+03:16:00 Vote granted for Node 3 in term 12.
+03:16:00 Node 1 rejected AppendEntries RPC from 3.
+03:16:00 Node 1 rejected AppendEntries RPC from 3.
+03:16:01 Node 1 accepted AppendEntries RPC from 3.
+03:16:03 Node 1 (follower) committed the entry SET X 3 11 to the state machine.
+03:16:03 Node 1 (follower) committed the entry NO-OP   12 to the state machine.
+03:16:09 Vote granted for Node 5 in term 13.
+03:16:09 Vote granted for Node 3 in term 14.
+03:16:09 Node 1 rejected AppendEntries RPC from 3.
+03:16:13 Node 1 rejected AppendEntries RPC from 3.
+03:16:13 Node 1 rejected AppendEntries RPC from 3.
+03:16:14 Node 1 accepted AppendEntries RPC from 3.
+03:16:14 Node 1 accepted AppendEntries RPC from 3.
+03:16:14 Node 1 rejected AppendEntries RPC from 3.
+03:16:21 Vote denied for Node 5 in term 15.
+03:16:22 Node 1 rejected AppendEntries RPC from 5.
+03:16:22 Node 1 rejected AppendEntries RPC from 5.
+03:16:22 Node 1 accepted AppendEntries RPC from 5.
+03:16:29 Node 1 (follower) committed the entry NO-OP   14 to the state machine.
+03:16:29 Node 1 (follower) committed the entry NO-OP   14 to the state machine.
+03:16:29 Node 1 (follower) committed the entry NO-OP   15 to the state machine.
+03:16:41 Node 1 election timer timed out, Starting election.
+03:16:41 Vote granted for Node 1 in term 16.
+03:16:42 Node 1 became the leader for term 16
+03:16:42 Leader waiting for Old Leader Lease to timeout.
+03:16:42 Leader 1 sending heartbeat & Renewing Lease
+03:16:43 Error occurred while sending RPC to Node 3.
+03:16:43 Error occurred while sending RPC to Node 3.
+03:16:43 Node 1 (leader) committed the entry NO-OP   16 to the state machine.
+03:16:44 Error occurred while sending RPC to Node 2.
+03:16:44 Error occurred while sending RPC to Node 2.
+03:16:44 Error occurred while sending RPC to Node 2.
+03:16:45 Leader 1 sending heartbeat & Renewing Lease
+03:16:48 Error occurred while sending RPC to Node 2.
+03:16:50 Leader 1 sending heartbeat & Renewing Lease
+03:16:53 Error occurred while sending RPC to Node 2.
+03:16:57 Leader 1 sending heartbeat & Renewing Lease
+03:17:00 Error occurred while sending RPC to Node 2.
+03:17:02 Leader 1 sending heartbeat & Renewing Lease
+03:17:03 Vote granted for Node 4 in term 17.
+03:17:03 Node 1 rejected AppendEntries RPC from 4.
+03:17:03 Node 1 rejected AppendEntries RPC from 4.
+03:17:03 Node 1 accepted AppendEntries RPC from 4.
+03:17:05 Error occurred while sending RPC to Node 2.
+03:17:06 Node 1 (follower) committed the entry NO-OP   17 to the state machine.
+03:17:12 Node 1 election timer timed out, Starting election.
+03:17:12 Vote granted for Node 1 in term 18.
+03:17:12 Node 1 became the leader for term 18
+03:17:12 Leader waiting for Old Leader Lease to timeout.
+03:17:12 Leader 1 sending heartbeat & Renewing Lease
+03:17:13 Error occurred while sending RPC to Node 3.
+03:17:13 Node 1 (leader) committed the entry NO-OP   18 to the state machine.
+03:17:14 Error occurred while sending RPC to Node 2.
+03:17:14 Error occurred while sending RPC to Node 2.
+03:17:14 Error occurred while sending RPC to Node 2.
+03:17:15 Leader 1 sending heartbeat & Renewing Lease
+03:17:18 Error occurred while sending RPC to Node 2.
+03:17:21 Vote granted for Node 3 in term 19.
+03:17:22 Node 1 rejected AppendEntries RPC from 3.
+03:17:22 Node 1 rejected AppendEntries RPC from 3.
+03:17:22 Node 1 accepted AppendEntries RPC from 3.
+03:17:25 Node 1 (follower) committed the entry NO-OP   19 to the state machine.
+03:17:32 Vote granted for Node 5 in term 20.
+03:17:37 Node 1 rejected AppendEntries RPC from 5.
+03:17:37 Node 1 rejected AppendEntries RPC from 5.
+03:17:38 Node 1 rejected AppendEntries RPC from 5.
+03:17:38 Node 1 accepted AppendEntries RPC from 5.
+03:17:44 Vote granted for Node 4 in term 21.
+03:17:45 Node 1 rejected AppendEntries RPC from 4.
+03:17:45 Node 1 rejected AppendEntries RPC from 4.
+03:17:45 Node 1 rejected AppendEntries RPC from 4.
+03:17:45 Node 1 rejected AppendEntries RPC from 4.
+03:17:46 Node 1 accepted AppendEntries RPC from 4.
+03:17:46 Node 1 rejected AppendEntries RPC from 4.
+03:17:52 Vote granted for Node 3 in term 22.
+03:17:52 Node 1 rejected AppendEntries RPC from 3.
+03:17:52 Node 1 rejected AppendEntries RPC from 3.
+03:17:53 Node 1 rejected AppendEntries RPC from 3.
+03:17:53 Node 1 rejected AppendEntries RPC from 3.
+03:17:54 Node 1 accepted AppendEntries RPC from 3.
+03:17:54 Node 1 accepted AppendEntries RPC from 3.
+03:17:59 Node 1 election timer timed out, Starting election.
+03:17:59 Vote granted for Node 1 in term 23.
+03:18:00 Node 1 became the leader for term 23
+03:18:00 Leader waiting for Old Leader Lease to timeout.
+03:18:00 Leader 1 sending heartbeat & Renewing Lease
+03:18:02 Error occurred while sending RPC to Node 2.
+03:18:02 Error occurred while sending RPC to Node 2.
+03:18:02 Error occurred while sending RPC to Node 2.
+03:18:08 Vote granted for Node 4 in term 24.
+03:18:11 Node 1 rejected AppendEntries RPC from 4.
+03:18:12 Node 1 rejected AppendEntries RPC from 4.
+03:18:12 Node 1 rejected AppendEntries RPC from 4.
+03:18:14 Node 1 rejected AppendEntries RPC from 4.
+03:18:15 Node 1 rejected AppendEntries RPC from 4.
+03:18:16 Node 1 rejected AppendEntries RPC from 4.
+03:18:16 Node 1 rejected AppendEntries RPC from 4.
+03:18:20 Node 1 rejected AppendEntries RPC from 4.
+03:18:22 Node 1 accepted AppendEntries RPC from 4.
+03:18:22 Vote denied for Node 3 in term 25.
+03:18:22 Node 1 accepted AppendEntries RPC from 4.
+03:18:22 Node 1 rejected AppendEntries RPC from 4.
+03:18:24 Node 1 accepted AppendEntries RPC from 4.
+03:18:24 Node 1 rejected AppendEntries RPC from 3.
+03:18:25 Node 1 rejected AppendEntries RPC from 3.
+03:18:26 Node 1 rejected AppendEntries RPC from 3.
+03:18:27 Node 1 rejected AppendEntries RPC from 3.
+03:18:29 Node 1 rejected AppendEntries RPC from 3.
+03:18:29 Node 1 rejected AppendEntries RPC from 3.
+03:18:30 Node 1 rejected AppendEntries RPC from 3.
+03:18:30 Node 1 rejected AppendEntries RPC from 3.
+03:18:31 Node 1 accepted AppendEntries RPC from 3.
+03:18:31 Node 1 rejected AppendEntries RPC from 3.
+03:18:32 Vote granted for Node 5 in term 26.
+03:18:32 Vote granted for Node 3 in term 27.
+03:18:32 Node 1 rejected AppendEntries RPC from 3.
+03:18:32 Node 1 rejected AppendEntries RPC from 3.
+03:18:33 Node 1 accepted AppendEntries RPC from 3.
+03:18:40 Vote granted for Node 5 in term 28.
+03:18:40 Node 1 rejected AppendEntries RPC from 5.
+03:18:40 Node 1 rejected AppendEntries RPC from 5.
+03:18:40 Node 1 rejected AppendEntries RPC from 5.
+03:18:41 Node 1 rejected AppendEntries RPC from 5.
+03:18:41 Node 1 accepted AppendEntries RPC from 5.
+03:18:48 Vote granted for Node 3 in term 29.
+03:18:48 Node 1 rejected AppendEntries RPC from 3.
+03:18:48 Node 1 rejected AppendEntries RPC from 3.
+03:18:49 Node 1 accepted AppendEntries RPC from 3.
+03:18:49 Node 1 (follower) committed the entry NO-OP   20 to the state machine.
+03:18:49 Node 1 (follower) committed the entry NO-OP   20 to the state machine.
+03:18:49 Node 1 (follower) committed the entry NO-OP   21 to the state machine.
+03:18:49 Node 1 (follower) committed the entry NO-OP   20 to the state machine.
+03:18:49 Node 1 (follower) committed the entry NO-OP   21 to the state machine.
+03:18:49 Node 1 (follower) committed the entry NO-OP   20 to the state machine.
+03:18:49 Node 1 (follower) committed the entry SET X 4 21 to the state machine.
+03:18:49 Node 1 (follower) committed the entry NO-OP   21 to the state machine.
+03:18:49 Node 1 (follower) committed the entry SET X 4 21 to the state machine.
+03:18:49 Node 1 (follower) committed the entry NO-OP   21 to the state machine.
+03:18:50 Node 1 (follower) committed the entry SET X 4 21 to the state machine.
+03:18:50 Node 1 (follower) committed the entry SET X 4 21 to the state machine.
+03:18:50 Node 1 (follower) committed the entry SET X 4 21 to the state machine.
+03:18:50 Node 1 (follower) committed the entry SET X 4 21 to the state machine.
+03:18:50 Node 1 (follower) committed the entry NO-OP   22 to the state machine.
+03:18:50 Node 1 (follower) committed the entry SET X 4 24 to the state machine.
+03:18:50 Node 1 (follower) committed the entry SET X 4 24 to the state machine.
+03:18:50 Node 1 (follower) committed the entry NO-OP   22 to the state machine.
+03:18:50 Node 1 (follower) committed the entry NO-OP   22 to the state machine.
+03:18:50 Node 1 (follower) committed the entry NO-OP   23 to the state machine.
+03:18:50 Node 1 (follower) committed the entry NO-OP   23 to the state machine.
+03:18:50 Node 1 (follower) committed the entry NO-OP   24 to the state machine.
+03:18:50 Node 1 (follower) committed the entry NO-OP   24 to the state machine.
+03:18:50 Node 1 (follower) committed the entry NO-OP   24 to the state machine.
+03:18:50 Node 1 (follower) committed the entry NO-OP   24 to the state machine.
+03:18:50 Node 1 (follower) committed the entry NO-OP   25 to the state machine.
+03:18:50 Node 1 (follower) committed the entry NO-OP   27 to the state machine.
+03:18:50 Node 1 (follower) committed the entry NO-OP   23 to the state machine.
+03:18:50 Node 1 (follower) committed the entry NO-OP   23 to the state machine.
+03:18:50 Node 1 (follower) committed the entry NO-OP   24 to the state machine.
+03:18:50 Node 1 (follower) committed the entry NO-OP   24 to the state machine.
+03:18:50 Node 1 (follower) committed the entry NO-OP   24 to the state machine.
+03:18:50 Node 1 (follower) committed the entry NO-OP   24 to the state machine.
+03:18:50 Node 1 (follower) committed the entry NO-OP   25 to the state machine.
+03:18:51 Node 1 (follower) committed the entry NO-OP   27 to the state machine.
+03:18:55 Vote granted for Node 5 in term 30.
+03:18:56 Node 1 rejected AppendEntries RPC from 5.
+03:18:56 Node 1 rejected AppendEntries RPC from 5.
+03:18:56 Node 1 rejected AppendEntries RPC from 5.
+03:18:56 Node 1 accepted AppendEntries RPC from 5.
+03:19:05 Node 1 election timer timed out, Starting election.
+03:19:05 Vote granted for Node 1 in term 31.
+03:19:05 Node 1 became the leader for term 31
+03:19:05 Leader waiting for Old Leader Lease to timeout.
+03:19:05 Leader 1 sending heartbeat & Renewing Lease
+03:19:07 Error occurred while sending RPC to Node 2.
+03:19:07 Error occurred while sending RPC to Node 2.
+03:19:07 Error occurred while sending RPC to Node 2.
+03:19:16 Vote granted for Node 4 in term 32.
+03:19:19 Node 1 rejected AppendEntries RPC from 4.
+03:19:19 Node 1 rejected AppendEntries RPC from 4.
+03:19:21 Node 1 accepted AppendEntries RPC from 4.
+03:19:26 Vote granted for Node 3 in term 33.
+03:19:32 Node 1 rejected AppendEntries RPC from 3.
+03:19:33 Node 1 rejected AppendEntries RPC from 3.
+03:19:34 Node 1 rejected AppendEntries RPC from 3.
+03:19:35 Node 1 rejected AppendEntries RPC from 3.
+03:19:36 Node 1 accepted AppendEntries RPC from 3.
+03:19:41 Vote granted for Node 5 in term 34.
+03:19:42 Node 1 rejected AppendEntries RPC from 5.
+03:19:43 Node 1 rejected AppendEntries RPC from 5.
+03:19:43 Node 1 rejected AppendEntries RPC from 5.
+03:19:44 Node 1 accepted AppendEntries RPC from 5.
+03:19:50 Vote granted for Node 4 in term 35.
+03:19:51 Node 1 rejected AppendEntries RPC from 4.
+03:19:51 Node 1 rejected AppendEntries RPC from 4.
+03:19:51 Node 1 rejected AppendEntries RPC from 4.
+03:19:52 Node 1 rejected AppendEntries RPC from 4.
+03:19:52 Node 1 rejected AppendEntries RPC from 4.
+03:19:52 Node 1 accepted AppendEntries RPC from 4.
+03:20:01 Node 1 election timer timed out, Starting election.
+03:20:01 Vote granted for Node 1 in term 36.
+03:20:01 Node 1 became the leader for term 36
+03:20:01 Leader waiting for Old Leader Lease to timeout.
+03:20:01 Leader 1 sending heartbeat & Renewing Lease
+03:20:04 Error occurred while sending RPC to Node 2.
+03:20:04 Error occurred while sending RPC to Node 2.
+03:20:04 Error occurred while sending RPC to Node 2.
+03:20:13 Vote granted for Node 3 in term 37.
+03:20:14 Node 1 rejected AppendEntries RPC from 3.
+03:20:18 Node 1 rejected AppendEntries RPC from 3.
+03:20:18 Node 1 accepted AppendEntries RPC from 3.
+03:20:24 Node 1 election timer timed out, Starting election.
+03:20:24 Vote granted for Node 1 in term 38.
+03:20:24 Node 1 became the leader for term 38
+03:20:24 Leader waiting for Old Leader Lease to timeout.
+03:20:24 Leader 1 sending heartbeat & Renewing Lease
+03:20:26 Error occurred while sending RPC to Node 2.
+03:20:26 Error occurred while sending RPC to Node 2.
+03:20:26 Error occurred while sending RPC to Node 2.
+03:20:32 Vote granted for Node 3 in term 39.
+03:20:34 Node 1 rejected AppendEntries RPC from 3.
+03:20:35 Node 1 rejected AppendEntries RPC from 3.
+03:20:38 Node 1 accepted AppendEntries RPC from 3.
+03:20:40 Vote granted for Node 5 in term 40.
+03:20:42 Node 1 rejected AppendEntries RPC from 5.
+03:20:42 Node 1 rejected AppendEntries RPC from 5.
+03:20:43 Node 1 accepted AppendEntries RPC from 5.
+03:20:48 Vote granted for Node 4 in term 41.
+03:20:51 Node 1 rejected AppendEntries RPC from 4.
+03:20:51 Node 1 rejected AppendEntries RPC from 4.
+03:20:53 Node 1 accepted AppendEntries RPC from 4.
+03:20:59 Vote granted for Node 3 in term 42.
+03:21:00 Node 1 rejected AppendEntries RPC from 3.
+03:21:02 Node 1 rejected AppendEntries RPC from 3.
+03:21:02 Node 1 accepted AppendEntries RPC from 3.
+03:21:08 Vote granted for Node 4 in term 43.
+03:21:09 Node 1 rejected AppendEntries RPC from 4.
+03:21:09 Node 1 rejected AppendEntries RPC from 4.
+03:21:09 Node 1 accepted AppendEntries RPC from 4.
+03:21:15 Node 1 election timer timed out, Starting election.
+03:21:15 Vote granted for Node 1 in term 44.
+03:21:15 Node 1 became the leader for term 44
+03:21:15 Leader waiting for Old Leader Lease to timeout.
+03:21:15 Leader 1 sending heartbeat & Renewing Lease
+03:21:18 Error occurred while sending RPC to Node 2.
+03:21:18 Error occurred while sending RPC to Node 2.
+03:21:18 Error occurred while sending RPC to Node 2.
+03:21:26 Vote granted for Node 5 in term 45.
+03:21:27 Node 1 rejected AppendEntries RPC from 5.
+03:21:29 Node 1 rejected AppendEntries RPC from 5.
+03:21:31 Node 1 rejected AppendEntries RPC from 5.
+03:21:31 Node 1 accepted AppendEntries RPC from 5.
+03:21:36 Vote granted for Node 4 in term 46.
+03:21:36 Vote granted for Node 5 in term 47.
+03:21:41 Node 1 rejected AppendEntries RPC from 5.
+03:21:42 Node 1 rejected AppendEntries RPC from 5.
+03:21:43 Node 1 rejected AppendEntries RPC from 5.
+03:21:44 Node 1 rejected AppendEntries RPC from 5.
+03:21:45 Node 1 accepted AppendEntries RPC from 5.
+03:21:48 Vote granted for Node 4 in term 48.
+03:21:49 Node 1 rejected AppendEntries RPC from 4.
+03:21:51 Node 1 rejected AppendEntries RPC from 4.
+03:21:52 Node 1 accepted AppendEntries RPC from 4.
+03:21:55 Vote granted for Node 3 in term 49.
+03:22:00 Node 1 rejected AppendEntries RPC from 3.
+03:22:00 Node 1 rejected AppendEntries RPC from 3.
+03:22:00 Node 1 rejected AppendEntries RPC from 3.
+03:22:00 Node 1 accepted AppendEntries RPC from 3.
+03:22:06 Node 1 election timer timed out, Starting election.
+03:22:06 Vote granted for Node 1 in term 50.
+03:22:06 Node 1 became the leader for term 50
+03:22:06 Leader waiting for Old Leader Lease to timeout.
+03:22:06 Leader 1 sending heartbeat & Renewing Lease
+03:22:09 Error occurred while sending RPC to Node 2.
+03:22:09 Error occurred while sending RPC to Node 2.
+03:22:09 Error occurred while sending RPC to Node 2.
+03:22:14 Vote granted for Node 4 in term 51.
+03:22:16 Node 1 rejected AppendEntries RPC from 4.
+03:22:18 Node 1 rejected AppendEntries RPC from 4.
+03:22:18 Node 1 rejected AppendEntries RPC from 4.
+03:22:19 Node 1 rejected AppendEntries RPC from 4.
+03:22:20 Node 1 rejected AppendEntries RPC from 4.
+03:22:22 Node 1 rejected AppendEntries RPC from 4.
+03:22:26 Node 1 accepted AppendEntries RPC from 4.
+03:22:28 Node 1 election timer timed out, Starting election.
+03:22:28 Vote granted for Node 1 in term 52.
+03:22:28 Vote granted for Node 4 in term 53.
+03:22:31 Error occurred while sending RPC to Node 2.
+03:22:34 Node 1 rejected AppendEntries RPC from 4.
+03:22:34 Node 1 rejected AppendEntries RPC from 4.
+03:22:35 Node 1 rejected AppendEntries RPC from 4.
+03:22:35 Node 1 accepted AppendEntries RPC from 4.
+03:22:44 Vote granted for Node 3 in term 54.
+03:22:44 Node 1 rejected AppendEntries RPC from 3.
+03:22:45 Node 1 rejected AppendEntries RPC from 3.
+03:22:45 Node 1 rejected AppendEntries RPC from 3.
+03:22:45 Node 1 rejected AppendEntries RPC from 3.
+03:22:45 Node 1 accepted AppendEntries RPC from 3.
+03:22:51 Node 1 election timer timed out, Starting election.
+03:22:51 Vote granted for Node 1 in term 55.
+03:22:51 Node 1 became the leader for term 55
+03:22:51 Leader waiting for Old Leader Lease to timeout.
+03:22:51 Leader 1 sending heartbeat & Renewing Lease
+03:22:53 Error occurred while sending RPC to Node 5.
+03:22:53 Error occurred while sending RPC to Node 5.
+03:22:54 Error occurred while sending RPC to Node 2.
+03:22:54 Error occurred while sending RPC to Node 2.
+03:22:54 Error occurred while sending RPC to Node 2.
+03:22:59 Vote granted for Node 3 in term 56.
+03:23:01 Node 1 rejected AppendEntries RPC from 3.
+03:23:01 Node 1 rejected AppendEntries RPC from 3.
+03:23:02 Node 1 accepted AppendEntries RPC from 3.
+03:23:07 Vote granted for Node 5 in term 57.
+03:23:08 Node 1 rejected AppendEntries RPC from 5.
+03:23:09 Node 1 rejected AppendEntries RPC from 5.
+03:23:10 Node 1 accepted AppendEntries RPC from 5.
+03:23:17 Node 1 election timer timed out, Starting election.
+03:23:17 Vote granted for Node 1 in term 58.
+03:23:18 Node 1 became the leader for term 58
+03:23:18 Leader waiting for Old Leader Lease to timeout.
+03:23:18 Leader 1 sending heartbeat & Renewing Lease
+03:23:20 Error occurred while sending RPC to Node 2.
+03:23:20 Error occurred while sending RPC to Node 2.
+03:23:20 Error occurred while sending RPC to Node 2.
+03:23:26 Vote granted for Node 3 in term 59.
+03:23:28 Node 1 rejected AppendEntries RPC from 3.
+03:23:31 Node 1 rejected AppendEntries RPC from 3.
+03:23:32 Node 1 accepted AppendEntries RPC from 3.
+03:23:35 Vote granted for Node 5 in term 60.
+03:23:37 Node 1 rejected AppendEntries RPC from 5.
+03:23:37 Node 1 rejected AppendEntries RPC from 5.
+03:23:39 Node 1 accepted AppendEntries RPC from 5.
+03:23:44 Vote granted for Node 3 in term 61.
+03:23:44 Vote granted for Node 5 in term 62.
+03:23:46 Node 1 rejected AppendEntries RPC from 5.
+03:23:47 Node 1 rejected AppendEntries RPC from 5.
+03:23:49 Node 1 accepted AppendEntries RPC from 5.
+03:23:52 Vote granted for Node 3 in term 63.
+03:23:54 Node 1 rejected AppendEntries RPC from 3.
+03:23:56 Node 1 rejected AppendEntries RPC from 3.
+03:23:58 Node 1 accepted AppendEntries RPC from 3.
+03:24:00 Vote granted for Node 4 in term 64.
+03:24:01 Node 1 rejected AppendEntries RPC from 4.
+03:24:03 Node 1 rejected AppendEntries RPC from 4.
+03:24:03 Node 1 rejected AppendEntries RPC from 4.
+03:24:06 Node 1 accepted AppendEntries RPC from 4.
+03:24:07 Node 1 accepted AppendEntries RPC from 4.
+03:24:07 Node 1 rejected AppendEntries RPC from 4.
+03:24:09 Vote denied for Node 5 in term 65.
+03:24:09 Node 1 rejected AppendEntries RPC from 4.
+03:24:15 Vote denied for Node 5 in term 66.
+03:24:21 Vote denied for Node 4 in term 67.
+03:24:27 Node 1 election timer timed out, Starting election.
+03:24:27 Vote granted for Node 1 in term 68.
+03:24:29 Error occurred while sending RPC to Node 3.
+03:24:29 Error occurred while sending RPC to Node 5.
+03:24:29 Error occurred while sending RPC to Node 2.
+03:24:35 Vote denied for Node 4 in term 69.
+03:24:40 Node 1 election timer timed out, Starting election.
+03:24:40 Vote granted for Node 1 in term 70.
+03:24:43 Error occurred while sending RPC to Node 3.
+03:24:43 Error occurred while sending RPC to Node 2.
+03:24:43 Error occurred while sending RPC to Node 5.
+03:24:46 Node 1 election timer timed out, Starting election.
+03:24:46 Vote granted for Node 1 in term 71.
+03:24:48 Error occurred while sending RPC to Node 5.
+03:24:48 Error occurred while sending RPC to Node 2.
+03:24:48 Error occurred while sending RPC to Node 3.
+03:24:52 Node 1 election timer timed out, Starting election.
+03:24:52 Vote granted for Node 1 in term 72.
+03:24:54 Error occurred while sending RPC to Node 2.
+03:24:54 Error occurred while sending RPC to Node 5.
+03:24:54 Error occurred while sending RPC to Node 3.
+03:25:00 Node 1 election timer timed out, Starting election.
+03:25:00 Vote granted for Node 1 in term 73.
+03:25:00 Vote denied for Node 4 in term 73.
+03:25:03 Error occurred while sending RPC to Node 3.
+03:25:03 Error occurred while sending RPC to Node 5.
+03:25:03 Error occurred while sending RPC to Node 2.
+03:25:10 Node 1 election timer timed out, Starting election.
+03:25:10 Vote granted for Node 1 in term 74.
+03:25:12 Error occurred while sending RPC to Node 2.
+03:25:12 Error occurred while sending RPC to Node 3.
+03:25:12 Error occurred while sending RPC to Node 5.
+03:25:19 Node 1 election timer timed out, Starting election.
+03:25:19 Vote granted for Node 1 in term 75.
+03:25:21 Error occurred while sending RPC to Node 3.
+03:25:21 Error occurred while sending RPC to Node 2.
+03:25:21 Error occurred while sending RPC to Node 5.
+03:25:26 Vote denied for Node 4 in term 76.
+03:25:35 Vote denied for Node 4 in term 77.
+03:25:40 Vote denied for Node 2 in term 78.
+03:25:46 Node 1 election timer timed out, Starting election.
+03:25:46 Vote granted for Node 1 in term 79.
+03:25:46 Node 1 became the leader for term 79
+03:25:46 Leader waiting for Old Leader Lease to timeout.
+03:25:46 Leader 1 sending heartbeat & Renewing Lease
+03:25:48 Error occurred while sending RPC to Node 4.
+03:25:48 Error occurred while sending RPC to Node 4.
+03:25:48 Error occurred while sending RPC to Node 5.
+03:25:48 Error occurred while sending RPC to Node 5.
+03:25:48 Error occurred while sending RPC to Node 5.
+03:25:48 Error occurred while sending RPC to Node 3.
+03:25:48 Error occurred while sending RPC to Node 3.
+03:25:56 Vote granted for Node 4 in term 80.
+03:25:57 Node 1 rejected AppendEntries RPC from 4.
+03:25:57 Node 1 rejected AppendEntries RPC from 4.
+03:25:57 Leader 1 lease renewal failed. Stepping Down.
+03:25:57 1 Stepping down
+03:25:58 Node 1 accepted AppendEntries RPC from 4.
+03:26:07 Node 1 election timer timed out, Starting election.
+03:26:07 Vote granted for Node 1 in term 81.
+03:26:07 Node 1 became the leader for term 81
+03:26:07 Leader waiting for Old Leader Lease to timeout.
+03:26:07 Leader 1 sending heartbeat & Renewing Lease
+03:26:09 Error occurred while sending RPC to Node 4.
+03:26:09 Error occurred while sending RPC to Node 4.
+03:26:09 Node 1 (leader) received an GET X request.
+03:26:09 Error occurred while sending RPC to Node 3.
+03:26:09 Error occurred while sending RPC to Node 3.
+03:26:09 Error occurred while sending RPC to Node 3.
+03:26:09 Error occurred while sending RPC to Node 5.
+03:26:09 Error occurred while sending RPC to Node 5.
+03:26:09 Error occurred while sending RPC to Node 5.
+03:26:13 Node 1 (leader) received an GET X request.
+03:26:16 Node 1 (leader) received an SET X 5 request.
+03:26:18 Error occurred while sending RPC to Node 5.
+03:26:23 Vote granted for Node 4 in term 82.
+03:26:23 Node 1 election timer timed out, Starting election.
+03:26:23 Vote granted for Node 1 in term 83.
+03:26:23 Error occurred while sending RPC to Node 4.
+03:26:23 Node 1 became the leader for term 83
+03:26:23 Leader waiting for Old Leader Lease to timeout.
+03:26:24 Error occurred while sending RPC to Node 4.
+03:26:26 Error occurred while sending RPC to Node 5.
+03:26:26 Error occurred while sending RPC to Node 5.
+03:26:26 Error occurred while sending RPC to Node 3.
+03:26:26 Error occurred while sending RPC to Node 3.
+03:26:31 Vote granted for Node 4 in term 84.
+03:26:31 Leader 1 lease renewal failed. Stepping Down.
+03:26:31 1 Stepping down
+03:26:31 Node 1 rejected AppendEntries RPC from 4.
+03:26:31 Node 1 rejected AppendEntries RPC from 4.
+03:26:32 Node 1 accepted AppendEntries RPC from 4.
+03:26:41 Node 1 election timer timed out, Starting election.
+03:26:41 Vote granted for Node 1 in term 85.
+03:26:41 Node 1 became the leader for term 85
+03:26:41 Leader waiting for Old Leader Lease to timeout.
+03:26:41 Leader 1 sending heartbeat & Renewing Lease
+03:26:43 Error occurred while sending RPC to Node 4.
+03:26:43 Error occurred while sending RPC to Node 4.
+03:26:43 Error occurred while sending RPC to Node 3.
+03:26:43 Error occurred while sending RPC to Node 3.
+03:26:43 Error occurred while sending RPC to Node 3.
+03:26:43 Error occurred while sending RPC to Node 5.
+03:26:43 Error occurred while sending RPC to Node 5.
+03:26:43 Error occurred while sending RPC to Node 5.
+03:26:50 Vote granted for Node 4 in term 86.
+03:26:50 Node 1 election timer timed out, Starting election.
+03:26:50 Vote granted for Node 1 in term 87.
+03:26:50 Leader 1 lease renewal failed. Stepping Down.
+03:26:50 1 Stepping down
+03:26:53 Error occurred while sending RPC to Node 5.
+03:26:53 Error occurred while sending RPC to Node 3.
+03:26:58 Node 1 election timer timed out, Starting election.
+03:26:58 Vote granted for Node 1 in term 88.
+03:27:00 Error occurred while sending RPC to Node 3.
+03:27:00 Error occurred while sending RPC to Node 5.
+03:27:04 Vote denied for Node 2 in term 89.
+03:27:09 Vote granted for Node 4 in term 90.
+03:27:09 Node 1 rejected AppendEntries RPC from 4.
+03:27:10 Node 1 rejected AppendEntries RPC from 4.
+03:27:10 Node 1 rejected AppendEntries RPC from 4.
+03:27:10 Node 1 accepted AppendEntries RPC from 4.
+03:27:18 Node 1 election timer timed out, Starting election.
+03:27:18 Vote granted for Node 1 in term 91.
+03:27:18 Node 1 became the leader for term 91
+03:27:18 Leader waiting for Old Leader Lease to timeout.
+03:27:18 Leader 1 sending heartbeat & Renewing Lease
+03:27:20 Error occurred while sending RPC to Node 4.
+03:27:20 Error occurred while sending RPC to Node 4.
+03:27:21 Error occurred while sending RPC to Node 3.
+03:27:21 Error occurred while sending RPC to Node 3.
+03:27:21 Error occurred while sending RPC to Node 3.
+03:27:21 Error occurred while sending RPC to Node 5.
+03:27:21 Error occurred while sending RPC to Node 5.
+03:27:21 Error occurred while sending RPC to Node 5.
+03:27:23 Node 1 (leader) received an SET X 5 request.
+03:27:25 Error occurred while sending RPC to Node 3.
+03:27:26 Error occurred while sending RPC to Node 5.
+03:27:31 Vote granted for Node 4 in term 92.
+03:27:31 Node 1 rejected AppendEntries RPC from 4.
+03:27:32 Node 1 rejected AppendEntries RPC from 4.
+n.
+03:27:32 1 Stepping down
+03:27:32 Node 1 accepted AppendEntries RPC from 4.
+03:27:39 Node 1 election timer timed out, Starting election.
+03:27:39 Vote granted for Node 1 in term 93.
+03:27:40 Error occurred while sending RPC to Node 4.
+03:27:40 Node 1 became the leader for term 93
+03:27:40 Leader waiting for Old Leader Lease to timeout.
+03:27:40 Leader 1 sending heartbeat & Renewing Lease
+03:27:41 Error occurred while sending RPC to Node 4.
+03:27:41 Error occurred while sending RPC to Node 4.
+03:27:42 Error occurred while sending RPC to Node 5.
+03:27:42 Error occurred while sending RPC to Node 5.
+03:27:42 Error occurred while sending RPC to Node 5.
+03:27:42 Error occurred while sending RPC to Node 3.
+03:27:42 Error occurred while sending RPC to Node 3.
+03:27:42 Error occurred while sending RPC to Node 3.
+03:27:46 Node 1 (leader) received an SET X 5 request.
+03:27:48 Error occurred while sending RPC to Node 3.
+03:27:48 Error occurred while sending RPC to Node 5.
+03:27:52 Vote granted for Node 4 in term 94.
+03:27:53 Node 1 rejected AppendEntries RPC from 4.
+03:27:53 Node 1 rejected AppendEntries RPC from 4.
+03:27:54 Leader 1 lease renewal failed. Stepping Down.
+03:27:54 1 Stepping down
+03:27:54 Node 1 accepted AppendEntries RPC from 4.
+03:28:04 Node 1 election timer timed out, Starting election.
+03:28:04 Vote granted for Node 1 in term 95.
+03:28:04 Error occurred while sending RPC to Node 4.
+03:28:04 Node 1 became the leader for term 95
+03:28:04 Leader waiting for Old Leader Lease to timeout.
+03:28:04 Leader 1 sending heartbeat & Renewing Lease
+03:28:06 Error occurred while sending RPC to Node 3.
+03:28:06 Error occurred while sending RPC to Node 3.
+03:28:06 Error occurred while sending RPC to Node 3.
+03:28:06 Error occurred while sending RPC to Node 5.
+03:28:06 Error occurred while sending RPC to Node 5.
+03:28:06 Error occurred while sending RPC to Node 5.
+03:28:13 Vote granted for Node 4 in term 96.
+03:28:14 Node 1 rejected AppendEntries RPC from 4.
+03:28:14 Node 1 rejected AppendEntries RPC from 4.
+03:28:15 Node 1 accepted AppendEntries RPC from 4.
+03:28:20 Node 1 election timer timed out, Starting election.
+03:28:20 Vote granted for Node 1 in term 97.
+03:28:20 Node 1 became the leader for term 97
+03:28:20 Leader waiting for Old Leader Lease to timeout.
+03:28:20 Error occurred while sending RPC to Node 4.
+03:28:20 Error occurred while sending RPC to Node 4.
+03:28:20 Leader 1 sending heartbeat & Renewing Lease
+03:28:20 Node 1 (leader) received an SET X 5 request.
+03:28:22 Error occurred while sending RPC to Node 3.
+03:28:22 Error occurred while sending RPC to Node 3.
+03:28:22 Error occurred while sending RPC to Node 3.
+03:28:22 Error occurred while sending RPC to Node 3.
+03:28:22 Error occurred while sending RPC to Node 5.
+03:28:22 Error occurred while sending RPC to Node 5.
+03:28:22 Error occurred while sending RPC to Node 5.
+03:28:22 Error occurred while sending RPC to Node 5.
+03:28:32 Vote granted for Node 4 in term 98.
+03:28:38 Vote granted for Node 4 in term 99.
+03:28:40 Node 1 rejected AppendEntries RPC from 4.
+03:28:40 Node 1 rejected AppendEntries RPC from 4.
+03:28:42 Node 1 accepted AppendEntries RPC from 4.
+03:28:46 Node 1 election timer timed out, Starting election.
+03:28:46 Vote granted for Node 1 in term 100.
+03:28:46 Node 1 became the leader for term 100
+03:28:46 Leader waiting for Old Leader Lease to timeout.
+03:28:46 Error occurred while sending RPC to Node 4.
+03:28:46 Error occurred while sending RPC to Node 4.
+03:28:46 Error occurred while sending RPC to Node 4.
+03:28:46 Leader 1 sending heartbeat & Renewing Lease
+03:28:48 Error occurred while sending RPC to Node 5.
+03:28:48 Error occurred while sending RPC to Node 5.
+03:28:48 Error occurred while sending RPC to Node 5.
+03:28:48 Error occurred while sending RPC to Node 3.
+03:28:48 Error occurred while sending RPC to Node 3.
+03:28:48 Error occurred while sending RPC to Node 3.
+03:28:56 Vote granted for Node 4 in term 101.
+03:28:57 Node 1 rejected AppendEntries RPC from 4.
+03:28:57 Node 1 rejected AppendEntries RPC from 4.
+03:28:58 Node 1 accepted AppendEntries RPC from 4.
+03:29:05 Node 1 election timer timed out, Starting election.
+03:29:05 Vote granted for Node 1 in term 102.
+03:29:05 Vote granted for Node 4 in term 103.
+03:29:05 Error occurred while sending RPC to Node 4.
+03:29:05 Leader 1 lease renewal failed. Stepping Down.
+03:29:05 1 Stepping down
+03:29:05 Error occurred while sending RPC to Node 4.
+03:29:05 Node 1 rejected AppendEntries RPC from 4.
+03:29:05 Node 1 accepted AppendEntries RPC from 4.
+03:29:07 Error occurred while sending RPC to Node 5.
+03:29:07 Error occurred while sending RPC to Node 3.
+03:29:11 Node 1 election timer timed out, Starting election.
+03:29:11 Vote granted for Node 1 in term 104.
+03:29:11 Node 1 became the leader for term 104
+03:29:11 Leader waiting for Old Leader Lease to timeout.
+03:29:11 Leader 1 sending heartbeat & Renewing Lease
+03:29:13 Error occurred while sending RPC to Node 4.
+03:29:13 Error occurred while sending RPC to Node 4.
+03:29:14 Error occurred while sending RPC to Node 3.
+03:29:14 Error occurred while sending RPC to Node 3.
+03:29:14 Error occurred while sending RPC to Node 3.
+03:29:14 Error occurred while sending RPC to Node 5.
+03:29:14 Error occurred while sending RPC to Node 5.
+03:29:14 Error occurred while sending RPC to Node 5.
+03:29:17 Node 1 (leader) received an SET X 5 request.
+03:29:20 Error occurred while sending RPC to Node 3.
+03:29:20 Error occurred while sending RPC to Node 5.
+03:29:28 Vote granted for Node 4 in term 105.
+03:29:29 Leader 1 lease renewal failed. Stepping Down.
+03:29:29 1 Stepping down
+03:29:29 Node 1 rejected AppendEntries RPC from 4.
+03:29:30 Node 1 accepted AppendEntries RPC from 4.
+03:29:30 Node 1 rejected AppendEntries RPC from 4.
+03:29:35 Node 1 election timer timed out, Starting election.
+03:29:35 Vote granted for Node 1 in term 106.
+03:29:35 Error occurred while sending RPC to Node 4.
+03:29:35 Node 1 became the leader for term 106
+03:29:35 Leader waiting for Old Leader Lease to timeout.
+03:29:35 Leader 1 sending heartbeat & Renewing Lease
+03:29:37 Error occurred while sending RPC to Node 4.
+03:29:37 Error occurred while sending RPC to Node 5.
+03:29:37 Error occurred while sending RPC to Node 5.
+03:29:37 Error occurred while sending RPC to Node 5.
+03:29:38 Error occurred while sending RPC to Node 3.
+03:29:38 Error occurred while sending RPC to Node 3.
+03:29:42 Vote granted for Node 4 in term 107.
+03:29:49 Vote denied for Node 2 in term 108.
+03:29:55 Vote denied for Node 2 in term 109.
+03:30:01 Node 1 election timer timed out, Starting election.
+03:30:01 Vote granted for Node 1 in term 110.
+03:30:01 Error occurred while sending RPC to Node 4.
+03:30:01 Leader 1 lease renewal failed. Stepping Down.
+03:30:01 1 Stepping down
+03:30:04 Error occurred while sending RPC to Node 3.
+03:30:04 Error occurred while sending RPC to Node 5.
+03:30:07 Vote granted for Node 4 in term 111.
+03:30:08 Node 1 rejected AppendEntries RPC from 4.
+03:30:08 Node 1 rejected AppendEntries RPC from 4.
+03:30:08 Node 1 accepted AppendEntries RPC from 4.
+03:30:12 Node 1 accepted AppendEntries RPC from 4.
+03:30:17 Node 1 election timer timed out, Starting election.
+03:30:17 Vote granted for Node 1 in term 112.
+03:30:17 Node 1 became the leader for term 112
+03:30:17 Leader waiting for Old Leader Lease to timeout.
+03:30:17 Leader 1 sending heartbeat & Renewing Lease
+03:30:19 Error occurred while sending RPC to Node 4.
+03:30:19 Error occurred while sending RPC to Node 4.
+03:30:19 Error occurred while sending RPC to Node 3.
+03:30:19 Error occurred while sending RPC to Node 3.
+03:30:19 Error occurred while sending RPC to Node 3.
+03:30:19 Error occurred while sending RPC to Node 5.
+03:30:19 Error occurred while sending RPC to Node 5.
+03:30:19 Error occurred while sending RPC to Node 5.
+03:30:24 Vote granted for Node 4 in term 113.
+03:30:25 Node 1 rejected AppendEntries RPC from 4.
+03:30:25 Node 1 rejected AppendEntries RPC from 4.
+03:30:25 Node 1 accepted AppendEntries RPC from 4.
+03:30:26 Leader 1 lease renewal failed. Stepping Down.
+03:30:26 1 Stepping down
+03:30:32 Node 1 election timer timed out, Starting election.
+03:30:32 Vote granted for Node 1 in term 114.
+03:30:33 Node 1 became the leader for term 114
+03:30:33 Leader waiting for Old Leader Lease to timeout.
+03:30:33 Leader 1 sending heartbeat & Renewing Lease
+03:30:34 Error occurred while sending RPC to Node 4.
+03:30:34 Error occurred while sending RPC to Node 4.
+03:30:35 Error occurred while sending RPC to Node 3.
+03:30:35 Error occurred while sending RPC to Node 3.
+03:30:35 Error occurred while sending RPC to Node 3.
+03:30:35 Error occurred while sending RPC to Node 5.
+03:30:35 Error occurred while sending RPC to Node 5.
+03:30:35 Error occurred while sending RPC to Node 5.
+03:30:39 Vote granted for Node 4 in term 115.
+03:30:39 Leader 1 lease renewal failed. Stepping Down.
+03:30:39 1 Stepping down
+03:30:40 Node 1 rejected AppendEntries RPC from 4.
+03:30:40 Node 1 rejected AppendEntries RPC from 4.
+03:30:40 Node 1 accepted AppendEntries RPC from 4.
+03:30:47 Node 1 election timer timed out, Starting election.
+03:30:47 Vote granted for Node 1 in term 116.
+03:30:47 Node 1 became the leader for term 116
+03:30:47 Leader waiting for Old Leader Lease to timeout.
+03:30:47 Leader 1 sending heartbeat & Renewing Lease
+03:30:49 Error occurred while sending RPC to Node 4.
+03:30:49 Error occurred while sending RPC to Node 4.
+03:30:49 Error occurred while sending RPC to Node 3.
+03:30:49 Error occurred while sending RPC to Node 3.
+03:30:49 Error occurred while sending RPC to Node 3.
+03:30:49 Error occurred while sending RPC to Node 5.
+03:30:49 Error occurred while sending RPC to Node 5.
+03:30:49 Error occurred while sending RPC to Node 5.
+03:30:58 Vote granted for Node 4 in term 117.
+03:30:59 Leader 1 lease renewal failed. Stepping Down.
+03:30:59 1 Stepping down
+03:30:59 Node 1 rejected AppendEntries RPC from 4.
+03:30:59 Node 1 rejected AppendEntries RPC from 4.
+03:31:00 Node 1 accepted AppendEntries RPC from 4.
+03:31:07 Node 1 election timer timed out, Starting election.
+03:31:07 Vote granted for Node 1 in term 118.
+03:31:07 Node 1 became the leader for term 118
+03:31:07 Leader waiting for Old Leader Lease to timeout.
+03:31:07 Leader 1 sending heartbeat & Renewing Lease
+03:31:09 Error occurred while sending RPC to Node 4.
+03:31:09 Error occurred while sending RPC to Node 4.
+03:31:09 Error occurred while sending RPC to Node 3.
+03:31:09 Error occurred while sending RPC to Node 3.
+03:31:09 Error occurred while sending RPC to Node 3.
+03:31:09 Error occurred while sending RPC to Node 5.
+03:31:09 Error occurred while sending RPC to Node 5.
+03:31:09 Error occurred while sending RPC to Node 5.
+03:31:15 Vote granted for Node 4 in term 119.
+03:31:15 Leader 1 lease renewal failed. Stepping Down.
+03:31:15 1 Stepping down
+03:31:15 Node 1 rejected AppendEntries RPC from 4.
+03:31:15 Node 1 rejected AppendEntries RPC from 4.
+03:31:15 Node 1 accepted AppendEntries RPC from 4.
+03:31:21 Node 1 election timer timed out, Starting election.
+03:31:21 Vote granted for Node 1 in term 120.
+03:31:21 Node 1 became the leader for term 120
+03:31:21 Leader waiting for Old Leader Lease to timeout.
+03:31:21 Leader 1 sending heartbeat & Renewing Lease
+03:31:23 Error occurred while sending RPC to Node 4.
+03:31:23 Error occurred while sending RPC to Node 4.
+03:31:23 Error occurred while sending RPC to Node 3.
+03:31:23 Error occurred while sending RPC to Node 3.
+03:31:23 Error occurred while sending RPC to Node 3.
+03:31:24 Error occurred while sending RPC to Node 5.
+03:31:24 Error occurred while sending RPC to Node 5.
+03:31:24 Error occurred while sending RPC to Node 5.
+03:31:30 Vote granted for Node 4 in term 121.
+03:31:30 Node 1 election timer timed out, Starting election.
+03:31:30 Vote granted for Node 1 in term 122.
+03:31:30 Node 1 became the leader for term 122
+03:31:30 Leader waiting for Old Leader Lease to timeout.
+03:31:30 Error occurred while sending RPC to Node 4.
+03:31:32 Error occurred while sending RPC to Node 5.
+03:31:32 Error occurred while sending RPC to Node 5.
+03:31:32 Error occurred while sending RPC to Node 3.
+03:31:32 Error occurred while sending RPC to Node 3.
+03:31:37 Vote granted for Node 4 in term 123.
+03:31:37 Leader 1 lease renewal failed. Stepping Down.
+03:31:37 1 Stepping down
+03:31:38 Node 1 rejected AppendEntries RPC from 4.
+03:31:38 Node 1 rejected AppendEntries RPC from 4.
+03:31:39 Node 1 accepted AppendEntries RPC from 4.
+03:31:39 Node 1 accepted AppendEntries RPC from 4.
+03:31:45 Node 1 election timer timed out, Starting election.
+03:31:45 Vote granted for Node 1 in term 124.
+03:31:46 Node 1 became the leader for term 124
+03:31:46 Leader waiting for Old Leader Lease to timeout.
+03:31:46 Leader 1 sending heartbeat & Renewing Lease
+03:31:47 Error occurred while sending RPC to Node 4.
+03:31:48 Error occurred while sending RPC to Node 4.
+03:31:48 Error occurred while sending RPC to Node 5.
+03:31:48 Error occurred while sending RPC to Node 5.
+03:31:48 Error occurred while sending RPC to Node 5.
+03:31:48 Error occurred while sending RPC to Node 3.
+03:31:48 Error occurred while sending RPC to Node 3.
+03:31:48 Error occurred while sending RPC to Node 3.
+03:31:53 Vote granted for Node 4 in term 125.
+03:31:54 Node 1 rejected AppendEntries RPC from 4.
+03:31:54 Node 1 rejected AppendEntries RPC from 4.
+03:31:54 Node 1 accepted AppendEntries RPC from 4.
+03:31:54 Leader 1 lease renewal failed. Stepping Down.
+03:31:55 1 Stepping down
+03:32:00 Node 1 election timer timed out, Starting election.
+03:32:00 Vote granted for Node 1 in term 126.
+03:32:01 Node 1 became the leader for term 126
+03:32:01 Leader waiting for Old Leader Lease to timeout.
+03:32:01 Leader 1 sending heartbeat & Renewing Lease
+03:32:02 Error occurred while sending RPC to Node 4.
+03:32:02 Error occurred while sending RPC to Node 4.
+03:32:03 Error occurred while sending RPC to Node 5.
+03:32:03 Error occurred while sending RPC to Node 5.
+03:32:03 Error occurred while sending RPC to Node 5.
+03:32:03 Error occurred while sending RPC to Node 3.
+03:32:03 Error occurred while sending RPC to Node 3.
+03:32:03 Error occurred while sending RPC to Node 3.
+03:32:10 Vote granted for Node 4 in term 127.
+03:32:11 Leader 1 lease renewal failed. Stepping Down.
+03:32:11 1 Stepping down
+03:32:11 Node 1 rejected AppendEntries RPC from 4.
+03:32:11 Node 1 rejected AppendEntries RPC from 4.
+03:32:11 Node 1 accepted AppendEntries RPC from 4.
+03:32:17 Node 1 election timer timed out, Starting election.
+03:32:17 Vote granted for Node 1 in term 128.
+03:32:17 Node 1 became the leader for term 128
+03:32:17 Leader waiting for Old Leader Lease to timeout.
+03:32:17 Leader 1 sending heartbeat & Renewing Lease
+03:32:19 Error occurred while sending RPC to Node 4.
+03:32:19 Error occurred while sending RPC to Node 4.
+03:32:19 Error occurred while sending RPC to Node 5.
+03:32:19 Error occurred while sending RPC to Node 5.
+03:32:19 Error occurred while sending RPC to Node 5.
+03:32:19 Error occurred while sending RPC to Node 3.
+03:32:19 Error occurred while sending RPC to Node 3.
+03:32:19 Error occurred while sending RPC to Node 3.
+03:32:26 Vote granted for Node 4 in term 129.
+03:32:27 Node 1 rejected AppendEntries RPC from 4.
+03:32:27 Leader 1 lease renewal failed. Stepping Down.
+03:32:27 Node 1 rejected AppendEntries RPC from 4.
+03:32:27 1 Stepping down
+03:32:27 Node 1 rejected AppendEntries RPC from 4.
+03:32:28 Node 1 accepted AppendEntries RPC from 4.
+03:32:33 Node 1 election timer timed out, Starting election.
+03:32:33 Vote granted for Node 1 in term 130.
+03:32:33 Node 1 became the leader for term 130
+03:32:33 Leader waiting for Old Leader Lease to timeout.
+03:32:33 Leader 1 sending heartbeat & Renewing Lease
+03:32:35 Error occurred while sending RPC to Node 4.
+03:32:35 Error occurred while sending RPC to Node 4.
+03:32:36 Error occurred while sending RPC to Node 3.
+03:32:36 Error occurred while sending RPC to Node 3.
+03:32:36 Error occurred while sending RPC to Node 3.
+03:32:36 Error occurred while sending RPC to Node 5.
+03:32:36 Error occurred while sending RPC to Node 5.
+03:32:36 Error occurred while sending RPC to Node 5.
+03:32:42 Vote granted for Node 4 in term 131.
+03:32:43 Leader 1 lease renewal failed. Stepping Down.
+03:32:43 1 Stepping down
+03:32:43 Node 1 rejected AppendEntries RPC from 4.
+03:32:43 Node 1 rejected AppendEntries RPC from 4.
+03:32:43 Node 1 accepted AppendEntries RPC from 4.
+03:32:52 Node 1 election timer timed out, Starting election.
+03:32:52 Vote granted for Node 1 in term 132.
+03:32:52 Node 1 became the leader for term 132
+03:32:52 Leader waiting for Old Leader Lease to timeout.
+03:32:52 Leader 1 sending heartbeat & Renewing Lease
+03:32:54 Error occurred while sending RPC to Node 4.
+03:32:54 Error occurred while sending RPC to Node 4.
+03:32:54 Error occurred while sending RPC to Node 3.
+03:32:54 Error occurred while sending RPC to Node 3.
+03:32:54 Error occurred while sending RPC to Node 3.
+03:32:54 Error occurred while sending RPC to Node 5.
+03:32:54 Error occurred while sending RPC to Node 5.
+03:32:54 Error occurred while sending RPC to Node 5.
+03:33:02 Vote granted for Node 4 in term 133.
+03:33:03 Node 1 rejected AppendEntries RPC from 4.
+03:33:03 Node 1 rejected AppendEntries RPC from 4.
+03:33:03 Node 1 accepted AppendEntries RPC from 4.
+03:33:04 Leader 1 lease renewal failed. Stepping Down.
+03:33:04 1 Stepping down
+03:33:14 Node 1 election timer timed out, Starting election.
+03:33:14 Vote granted for Node 1 in term 134.
+03:33:14 Node 1 became the leader for term 134
+03:33:14 Leader waiting for Old Leader Lease to timeout.
+03:33:14 Leader 1 sending heartbeat & Renewing Lease
+03:33:15 Error occurred while sending RPC to Node 4.
+03:33:16 Error occurred while sending RPC to Node 4.
+03:33:16 Error occurred while sending RPC to Node 5.
+03:33:16 Error occurred while sending RPC to Node 5.
+03:33:16 Error occurred while sending RPC to Node 5.
+03:33:16 Error occurred while sending RPC to Node 3.
+03:33:16 Error occurred while sending RPC to Node 3.
+03:33:16 Error occurred while sending RPC to Node 3.
+03:33:23 Vote granted for Node 4 in term 135.
+03:33:23 Leader 1 lease renewal failed. Stepping Down.
+03:33:23 1 Stepping down
+03:33:23 Node 1 rejected AppendEntries RPC from 4.
+03:33:23 Node 1 rejected AppendEntries RPC from 4.
+03:33:24 Node 1 accepted AppendEntries RPC from 4.
+03:33:30 Node 1 election timer timed out, Starting election.
+03:33:30 Vote granted for Node 1 in term 136.
+03:33:31 Node 1 became the leader for term 136
+03:33:31 Leader waiting for Old Leader Lease to timeout.
+03:33:31 Leader 1 sending heartbeat & Renewing Lease
+03:33:32 Error occurred while sending RPC to Node 4.
+03:33:32 Error occurred while sending RPC to Node 4.
+03:33:33 Error occurred while sending RPC to Node 3.
+03:33:33 Error occurred while sending RPC to Node 3.
+03:33:33 Error occurred while sending RPC to Node 3.
+03:33:33 Error occurred while sending RPC to Node 5.
+03:33:33 Error occurred while sending RPC to Node 5.
+03:33:33 Error occurred while sending RPC to Node 5.
+03:33:39 Vote granted for Node 4 in term 137.
+03:33:40 Node 1 rejected AppendEntries RPC from 4.
+03:33:40 Node 1 rejected AppendEntries RPC from 4.
+03:33:41 Leader 1 lease renewal failed. Stepping Down.
+03:33:41 Node 1 accepted AppendEntries RPC from 4.
+03:33:41 1 Stepping down
+03:33:47 Node 1 election timer timed out, Starting election.
+03:33:47 Vote granted for Node 1 in term 138.
+03:33:47 Node 1 became the leader for term 138
+03:33:47 Leader waiting for Old Leader Lease to timeout.
+03:33:47 Leader 1 sending heartbeat & Renewing Lease
+03:33:49 Error occurred while sending RPC to Node 4.
+03:33:49 Error occurred while sending RPC to Node 4.
+03:33:49 Error occurred while sending RPC to Node 5.
+03:33:49 Error occurred while sending RPC to Node 5.
+03:33:49 Error occurred while sending RPC to Node 5.
+03:33:50 Error occurred while sending RPC to Node 3.
+03:33:50 Error occurred while sending RPC to Node 3.
+03:33:50 Error occurred while sending RPC to Node 3.
+03:33:55 Vote granted for Node 4 in term 139.
+03:33:56 Leader 1 lease renewal failed. Stepping Down.
+03:33:56 1 Stepping down
+03:33:56 Node 1 rejected AppendEntries RPC from 4.
+03:33:56 Node 1 rejected AppendEntries RPC from 4.
+03:33:57 Node 1 accepted AppendEntries RPC from 4.
+03:34:03 Node 1 election timer timed out, Starting election.
+03:34:03 Vote granted for Node 1 in term 140.
+03:34:03 Node 1 became the leader for term 140
+03:34:03 Leader waiting for Old Leader Lease to timeout.
+03:34:03 Leader 1 sending heartbeat & Renewing Lease
+03:34:05 Error occurred while sending RPC to Node 4.
+03:34:05 Error occurred while sending RPC to Node 4.
+03:34:05 Error occurred while sending RPC to Node 3.
+03:34:05 Error occurred while sending RPC to Node 3.
+03:34:05 Error occurred while sending RPC to Node 3.
+03:34:05 Error occurred while sending RPC to Node 5.
+03:34:05 Error occurred while sending RPC to Node 5.
+03:34:05 Error occurred while sending RPC to Node 5.
+03:34:10 Vote granted for Node 4 in term 141.
+03:34:11 Leader 1 lease renewal failed. Stepping Down.
+03:34:11 1 Stepping down
+03:34:11 Node 1 rejected AppendEntries RPC from 4.
+03:34:11 Node 1 rejected AppendEntries RPC from 4.
+03:34:12 Node 1 accepted AppendEntries RPC from 4.
+03:34:18 Node 1 election timer timed out, Starting election.
+03:34:18 Vote granted for Node 1 in term 142.
+03:34:18 Node 1 became the leader for term 142
+03:34:18 Leader waiting for Old Leader Lease to timeout.
+03:34:18 Leader 1 sending heartbeat & Renewing Lease
+03:34:20 Error occurred while sending RPC to Node 4.
+03:34:20 Error occurred while sending RPC to Node 4.
+03:34:20 Error occurred while sending RPC to Node 5.
+03:34:20 Error occurred while sending RPC to Node 5.
+03:34:20 Error occurred while sending RPC to Node 5.
+03:34:20 Error occurred while sending RPC to Node 3.
+03:34:20 Error occurred while sending RPC to Node 3.
+03:34:20 Error occurred while sending RPC to Node 3.
+03:34:26 Vote granted for Node 4 in term 143.
+03:34:27 Leader 1 lease renewal failed. Stepping Down.
+03:34:27 1 Stepping down
+03:34:27 Node 1 rejected AppendEntries RPC from 4.
+03:34:27 Node 1 rejected AppendEntries RPC from 4.
+03:34:28 Node 1 rejected AppendEntries RPC from 4.
+03:34:28 Node 1 accepted AppendEntries RPC from 4.
+03:34:34 Node 1 election timer timed out, Starting election.
+03:34:34 Vote granted for Node 1 in term 144.
+03:34:35 Node 1 became the leader for term 144
+03:34:35 Leader waiting for Old Leader Lease to timeout.
+03:34:35 Leader 1 sending heartbeat & Renewing Lease
+03:34:36 Error occurred while sending RPC to Node 4.
+03:34:36 Error occurred while sending RPC to Node 4.
+03:34:37 Error occurred while sending RPC to Node 5.
+03:34:37 Error occurred while sending RPC to Node 5.
+03:34:37 Error occurred while sending RPC to Node 5.
+03:34:37 Error occurred while sending RPC to Node 3.
+03:34:37 Error occurred while sending RPC to Node 3.
+03:34:37 Error occurred while sending RPC to Node 3.
+03:34:44 Vote granted for Node 4 in term 145.
+03:34:44 Leader 1 lease renewal failed. Stepping Down.
+03:34:44 1 Stepping down
+03:34:44 Node 1 rejected AppendEntries RPC from 4.
+03:34:44 Node 1 rejected AppendEntries RPC from 4.
+03:34:45 Node 1 accepted AppendEntries RPC from 4.
+03:34:52 Node 1 election timer timed out, Starting election.
+03:34:52 Vote granted for Node 1 in term 146.
+03:34:53 Node 1 became the leader for term 146
+03:34:53 Leader waiting for Old Leader Lease to timeout.
+03:34:53 Leader 1 sending heartbeat & Renewing Lease
+03:34:54 Error occurred while sending RPC to Node 4.
+03:34:55 Error occurred while sending RPC to Node 4.
+03:34:55 Error occurred while sending RPC to Node 5.
+03:34:55 Error occurred while sending RPC to Node 5.
+03:34:55 Error occurred while sending RPC to Node 5.
+03:34:55 Error occurred while sending RPC to Node 3.
+03:34:55 Error occurred while sending RPC to Node 3.
+03:34:55 Error occurred while sending RPC to Node 3.
+03:34:59 Vote granted for Node 4 in term 147.
+03:35:00 Node 1 rejected AppendEntries RPC from 4.
+03:35:00 Node 1 rejected AppendEntries RPC from 4.
+03:35:00 Leader 1 lease renewal failed. Stepping Down.
+03:35:00 1 Stepping down
+03:35:00 Node 1 accepted AppendEntries RPC from 4.
+03:35:08 Node 1 election timer timed out, Starting election.
+03:35:09 Vote granted for Node 1 in term 148.
+03:35:09 Node 1 became the leader for term 148
+03:35:09 Leader waiting for Old Leader Lease to timeout.
+03:35:09 Leader 1 sending heartbeat & Renewing Lease
+03:35:10 Error occurred while sending RPC to Node 4.
+03:35:10 Error occurred while sending RPC to Node 4.
+03:35:11 Error occurred while sending RPC to Node 5.
+03:35:11 Error occurred while sending RPC to Node 5.
+03:35:11 Error occurred while sending RPC to Node 3.
+03:35:11 Error occurred while sending RPC to Node 3.
+03:35:11 Error occurred while sending RPC to Node 3.
+03:35:11 Error occurred while sending RPC to Node 5.
+03:35:17 Vote granted for Node 4 in term 149.
+03:35:17 Node 1 election timer timed out, Starting election.
+03:35:17 Vote granted for Node 1 in term 150.
+03:35:18 Node 1 became the leader for term 150
+03:35:18 Leader waiting for Old Leader Lease to timeout.
+03:35:18 Error occurred while sending RPC to Node 4.

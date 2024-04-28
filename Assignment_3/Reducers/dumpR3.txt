@@ -1,0 +1,45 @@
+grpc request GetIntermediateData to Mapper 1 for data
+grpc call GetIntermediateData from Mapper 1 returned SUCCESS
+Received data from Mapper 1
+grpc request GetIntermediateData to Mapper 2 for data
+grpc call GetIntermediateData from Mapper 2 returned SUCCESS
+Received data from Mapper 2
+grpc request GetIntermediateData to Mapper 3 for data
+grpc call GetIntermediateData from Mapper 3 returned SUCCESS
+Received data from Mapper 3
+grpc request GetIntermediateData to Mapper 4 for data
+grpc call GetIntermediateData from Mapper 4 returned SUCCESS
+Received data from Mapper 4
+grpc request GetIntermediateData to Mapper 5 for data
+grpc call GetIntermediateData from Mapper 5 returned SUCCESS
+Received data from Mapper 5
+grpc request GetIntermediateData to Mapper 1 for data
+grpc call GetIntermediateData from Mapper 1 returned SUCCESS
+Received data from Mapper 1
+grpc request GetIntermediateData to Mapper 2 for data
+grpc call GetIntermediateData from Mapper 2 returned SUCCESS
+Received data from Mapper 2
+grpc request GetIntermediateData to Mapper 3 for data
+grpc call GetIntermediateData from Mapper 3 returned SUCCESS
+Received data from Mapper 3
+grpc request GetIntermediateData to Mapper 4 for data
+grpc call GetIntermediateData from Mapper 4 returned SUCCESS
+Received data from Mapper 4
+grpc request GetIntermediateData to Mapper 5 for data
+grpc call GetIntermediateData from Mapper 5 returned SUCCESS
+Received data from Mapper 5
+grpc request GetIntermediateData to Mapper 1 for data
+grpc call GetIntermediateData from Mapper 1 returned SUCCESS
+Received data from Mapper 1
+grpc request GetIntermediateData to Mapper 2 for data
+grpc call GetIntermediateData from Mapper 2 returned SUCCESS
+Received data from Mapper 2
+grpc request GetIntermediateData to Mapper 3 for data
+grpc call GetIntermediateData from Mapper 3 returned SUCCESS
+Received data from Mapper 3
+grpc request GetIntermediateData to Mapper 4 for data
+grpc call GetIntermediateData from Mapper 4 returned SUCCESS
+Received data from Mapper 4
+grpc request GetIntermediateData to Mapper 5 for data
+grpc call GetIntermediateData from Mapper 5 returned SUCCESS
+Received data from Mapper 5

@@ -267,6 +267,7 @@ const response = async(channel,replyQueue)=>{
 		await channel.prefetch(1)
 		const req = await channel.consume(replyQueue.queue, 
 			async (message) => {
+				console.log(message)
 			if (message.properties.correlationId === correlationId)
 				res = JSON.parse(message?.content)
 		}, {

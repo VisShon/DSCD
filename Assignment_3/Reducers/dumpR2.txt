@@ -1,0 +1,107 @@
+grpc request GetIntermediateData to Mapper 1 for data
+grpc call GetIntermediateData from Mapper 1 returned SUCCESS
+Received data from Mapper 1
+1,9.100000381469727,3.0999999046325684
+1,8.5,2.700000047683716
+1,0.8999999761581421,9.600000381469727
+1,0.5,7.400000095367432
+1,9.5,1.5
+1,8.600000381469727,2.5999999046325684
+grpc request GetIntermediateData to Mapper 2 for data
+grpc call GetIntermediateData from Mapper 2 returned SUCCESS
+Received data from Mapper 2
+1,0.800000011920929,9.800000190734863
+1,8.899999618530273,0.20000000298023224
+1,10.300000190734863,-0.30000001192092896
+1,0.8999999761581421,9.699999809265137
+1,8.699999809265137,2.4000000953674316
+grpc request GetIntermediateData to Mapper 3 for data
+grpc call GetIntermediateData from Mapper 3 returned SUCCESS
+Received data from Mapper 3
+1,11.5,-1.899999976158142
+1,9.699999809265137,0.800000011920929
+1,11.199999809265137,-1.2000000476837158
+grpc request GetIntermediateData to Mapper 4 for data
+grpc call GetIntermediateData from Mapper 4 returned SUCCESS
+Received data from Mapper 4
+1,8.100000381469727,3.4000000953674316
+1,10.199999809265137,0.5
+1,8.300000190734863,2.9000000953674316
+1,0.699999988079071,9.899999618530273
+1,11.100000381469727,-1.5
+1,10.5,-0.10000000149011612
+grpc request GetIntermediateData to Mapper 5 for data
+grpc call GetIntermediateData from Mapper 5 returned SUCCESS
+Received data from Mapper 5
+1,7.300000190734863,2.299999952316284
+1,9.800000190734863,1.2000000476837158
+1,10.800000190734863,-0.6000000238418579
+1,9.300000190734863,1.899999976158142
+grpc request GetIntermediateData to Mapper 1 for data
+grpc call GetIntermediateData from Mapper 1 returned SUCCESS
+Received data from Mapper 1
+1,9.100000381469727,3.0999999046325684
+1,8.5,2.700000047683716
+1,9.5,1.5
+1,8.600000381469727,2.5999999046325684
+grpc request GetIntermediateData to Mapper 2 for data
+grpc call GetIntermediateData from Mapper 2 returned SUCCESS
+Received data from Mapper 2
+1,8.899999618530273,0.20000000298023224
+1,10.300000190734863,-0.30000001192092896
+1,8.699999809265137,2.4000000953674316
+grpc request GetIntermediateData to Mapper 3 for data
+grpc call GetIntermediateData from Mapper 3 returned SUCCESS
+Received data from Mapper 3
+1,11.5,-1.899999976158142
+1,9.699999809265137,0.800000011920929
+1,11.199999809265137,-1.2000000476837158
+grpc request GetIntermediateData to Mapper 4 for data
+grpc call GetIntermediateData from Mapper 4 returned SUCCESS
+Received data from Mapper 4
+1,8.100000381469727,3.4000000953674316
+1,10.199999809265137,0.5
+1,8.300000190734863,2.9000000953674316
+1,11.100000381469727,-1.5
+1,10.5,-0.10000000149011612
+grpc request GetIntermediateData to Mapper 5 for data
+grpc call GetIntermediateData from Mapper 5 returned SUCCESS
+Received data from Mapper 5
+1,7.300000190734863,2.299999952316284
+1,9.800000190734863,1.2000000476837158
+1,10.800000190734863,-0.6000000238418579
+1,9.300000190734863,1.899999976158142
+grpc request GetIntermediateData to Mapper 1 for data
+grpc call GetIntermediateData from Mapper 1 returned SUCCESS
+Received data from Mapper 1
+1,9.100000381469727,3.0999999046325684
+1,8.5,2.700000047683716
+1,9.5,1.5
+1,8.600000381469727,2.5999999046325684
+grpc request GetIntermediateData to Mapper 2 for data
+grpc call GetIntermediateData from Mapper 2 returned SUCCESS
+Received data from Mapper 2
+1,8.899999618530273,0.20000000298023224
+1,10.300000190734863,-0.30000001192092896
+1,8.699999809265137,2.4000000953674316
+grpc request GetIntermediateData to Mapper 3 for data
+grpc call GetIntermediateData from Mapper 3 returned SUCCESS
+Received data from Mapper 3
+1,11.5,-1.899999976158142
+1,9.699999809265137,0.800000011920929
+1,11.199999809265137,-1.2000000476837158
+grpc request GetIntermediateData to Mapper 4 for data
+grpc call GetIntermediateData from Mapper 4 returned SUCCESS
+Received data from Mapper 4
+1,8.100000381469727,3.4000000953674316
+1,10.199999809265137,0.5
+1,8.300000190734863,2.9000000953674316
+1,11.100000381469727,-1.5
+1,10.5,-0.10000000149011612
+grpc request GetIntermediateData to Mapper 5 for data
+grpc call GetIntermediateData from Mapper 5 returned SUCCESS
+Received data from Mapper 5
+1,7.300000190734863,2.299999952316284
+1,9.800000190734863,1.2000000476837158
+1,10.800000190734863,-0.6000000238418579
+1,9.300000190734863,1.899999976158142

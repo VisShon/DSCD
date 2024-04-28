@@ -1,0 +1,62 @@
+syntax = "proto2";
+
+service MasterService {
+}
+
+message Point {
+  required float x = 1;
+  required float y = 2;
+}
+
+service MapperService {
+  rpc Map(MapRequest) returns (MapResponse) {}
+  rpc GetIntermediateData(IntermediateDataRequest) returns (IntermediateDataResponse) {}
+}
+
+message MapRequest {
+  repeated int32 input_split = 1;
+  repeated Point centroids = 2;
+}
+
+message MapOutput {
+  required int32 centroid_id = 1;
+  required Point point = 2;
+}
+
+message MapResponse {
+  required int32 mapper_id = 1;
+  required string status = 2;
+  repeated MapOutput map_output = 3;
+}
+
+message IntermediateDataRequest {
+  required int32 reducer_id = 1;
+}
+
+message IntermediateDataResponse {
+  repeated MapOutput map_output = 1;
+  required string status = 2;
+}
+
+
+service ReducerService {
+  rpc Reduce(ReduceRequest) returns (ReduceResponse) {}
+}
+
+message ReduceRequest {
+}
+
+message NewCentroids {
+  required int32 centroid_id = 1;
+  required Point point = 2;
+}
+
+message ReduceResponse {
+  required int32 reducer_id = 1;
+  required string status = 2;
+  repeated NewCentroids new_centroids = 3;
+}
+
+
+
+
